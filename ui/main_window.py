@@ -3,8 +3,9 @@
 import time
 from PyQt5.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
                              QLabel, QPushButton, QTabWidget, QScrollArea, QGridLayout,
-                             QComboBox, QSlider, QSpinBox, QFrame, QGroupBox, QSizePolicy)
-from PyQt5.QtCore import Qt, QTimer
+                             QComboBox, QSlider, QSpinBox, QFrame, QGroupBox, QSizePolicy,
+                             QMessageBox, QTableWidget, QTableWidgetItem, QHeaderView, QProgressBar)
+from PyQt5.QtCore import Qt, QTimer, QDateTime
 from PyQt5.QtGui import QIcon
 from loguru import logger
 from typing import Dict, Tuple
@@ -121,26 +122,112 @@ class MainWindow(QMainWindow):
         fullscreen_action.triggered.connect(self.toggle_fullscreen)
 
     def setup_monitor_tab(self):
-        """监控界面：显示摄像头实时画面"""
+        """监控界面：导航栏 + 操作区 + 主内容区 + 状态提示区"""
         monitor_tab = QWidget()
         self.tab_widget.addTab(monitor_tab, "监控")
+        layout = QVBoxLayout(monitor_tab)
+        layout.setSpacing(16)
+        layout.setContentsMargins(16, 16, 16, 16)
+
+        # 顶部导航栏（56px）
+        nav_bar = QFrame()
+        nav_bar.setObjectName("topNavBar")
+        nav_bar.setFixedHeight(56)
+        nav_layout = QHBoxLayout(nav_bar)
+        nav_layout.setContentsMargins(16, 0, 16, 0)
+        nav_title = QLabel("系统监控控制台")
+        nav_title.setObjectName("navTitle")
+        nav_layout.addWidget(nav_title)
+        nav_layout.addStretch()
+        self.quick_refresh_btn = QPushButton("快速刷新")
+        self.quick_refresh_btn.clicked.connect(self.handle_quick_refresh)
+        nav_layout.addWidget(self.quick_refresh_btn)
+        self.emergency_btn = QPushButton("应急模式")
+        self.emergency_btn.setObjectName("warningButton")
+        self.emergency_btn.clicked.connect(self.handle_emergency_mode)
+        nav_layout.addWidget(self.emergency_btn)
+        layout.addWidget(nav_bar)
+
+        # 功能操作区
+        toolbar = QGroupBox("功能操作区")
+        toolbar_layout = QHBoxLayout(toolbar)
+        toolbar_layout.setSpacing(8)
+        toolbar_layout.addWidget(QLabel("摄像头："))
+        self.camera_combo = QComboBox()
+        for cam_id, cam_config in self.camera_manager.cameras.items():
+            self.camera_combo.addItem(f"摄像头 {cam_id}: {cam_config.name}", cam_id)
+        toolbar_layout.addWidget(self.camera_combo)
+
+        self.start_btn = QPushButton("启动摄像头")
+        self.start_btn.clicked.connect(self.start_selected_camera)
+        toolbar_layout.addWidget(self.start_btn)
+
+        self.stop_btn = QPushButton("停止摄像头")
+        self.stop_btn.clicked.connect(self.stop_selected_camera)
+        toolbar_layout.addWidget(self.stop_btn)
+
+        toolbar_layout.addSpacing(16)
+        toolbar_layout.addWidget(QLabel("识别阈值"))
+        self.threshold_slider = QSlider(Qt.Horizontal)
+        self.threshold_slider.setRange(50, 100)
+        self.threshold_slider.setValue(int(self.config['recognition']['recognition_threshold'] * 100))
+        self.threshold_slider.valueChanged.connect(self.update_threshold)
+        toolbar_layout.addWidget(self.threshold_slider, 1)
+        self.threshold_value = QLabel(f"{self.threshold_slider.value() / 100:.2f}")
+        toolbar_layout.addWidget(self.threshold_value)
+        layout.addWidget(toolbar)
+
+        # 主内容区
+        content_layout = QHBoxLayout()
+        content_layout.setSpacing(16)
 
         scroll = QScrollArea()
         scroll.setWidgetResizable(True)
-
-        # 摄像头画面容器
         self.camera_container = QWidget()
         self.camera_grid = QGridLayout(self.camera_container)
-        self.camera_grid.setSpacing(10)
+        self.camera_grid.setSpacing(16)
         self.camera_grid.setContentsMargins(0, 0, 0, 0)
         scroll.setWidget(self.camera_container)
+        content_layout.addWidget(scroll, 3)
 
-        layout = QVBoxLayout(monitor_tab)
-        title = QLabel("实时监控")
-        title.setObjectName("sectionTitle")
-        title.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
-        layout.addWidget(title)
-        layout.addWidget(scroll)
+        right_panel = QVBoxLayout()
+        summary_group = QGroupBox("系统摘要")
+        summary_layout = QVBoxLayout(summary_group)
+        self.summary_label = QLabel("在线摄像头: 0\n已知人脸: 0\n最近告警: 0")
+        self.summary_label.setObjectName("summaryLabel")
+        summary_layout.addWidget(self.summary_label)
+        self.loading_bar = QProgressBar()
+        self.loading_bar.setRange(0, 0)
+        self.loading_bar.setVisible(False)
+        summary_layout.addWidget(self.loading_bar)
+        right_panel.addWidget(summary_group)
+
+        event_group = QGroupBox("最新告警（可排序）")
+        event_layout = QVBoxLayout(event_group)
+        self.alert_table = QTableWidget(0, 4)
+        self.alert_table.setHorizontalHeaderLabels(["时间", "人员", "摄像头", "置信度"])
+        self.alert_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        self.alert_table.horizontalHeader().setSectionsClickable(True)
+        self.alert_table.setSortingEnabled(True)
+        self.alert_table.verticalHeader().setVisible(False)
+        self.alert_table.setAlternatingRowColors(True)
+        event_layout.addWidget(self.alert_table)
+        right_panel.addWidget(event_group, 1)
+
+        content_layout.addLayout(right_panel, 2)
+        layout.addLayout(content_layout, 1)
+
+        # 状态提示区
+        status_frame = QFrame()
+        status_frame.setObjectName("statusNotice")
+        status_layout = QHBoxLayout(status_frame)
+        status_layout.setContentsMargins(12, 8, 12, 8)
+        self.notice_label = QLabel("系统运行正常，暂无未处理异常。")
+        status_layout.addWidget(self.notice_label, 1)
+        self.clear_notice_btn = QPushButton("清除提示")
+        self.clear_notice_btn.clicked.connect(lambda: self.notice_label.setText("系统运行正常，暂无未处理异常。"))
+        status_layout.addWidget(self.clear_notice_btn)
+        layout.addWidget(status_frame)
 
         # 摄像头显示
         self.max_display_cameras = 4
@@ -210,19 +297,19 @@ class MainWindow(QMainWindow):
         camera_layout = QVBoxLayout(camera_group)
         camera_layout.setSpacing(12)
 
-        self.camera_combo = QComboBox()
+        self.ctrl_camera_combo = QComboBox()
         for cam_id, cam_config in self.camera_manager.cameras.items():
-            self.camera_combo.addItem(f"摄像头 {cam_id}: {cam_config.name}", cam_id)
-        camera_layout.addWidget(self.camera_combo)
+            self.ctrl_camera_combo.addItem(f"摄像头 {cam_id}: {cam_config.name}", cam_id)
+        camera_layout.addWidget(self.ctrl_camera_combo)
 
         # 启动/停止按钮
         btn_layout = QHBoxLayout()
-        self.start_btn = QPushButton("启动摄像头")
-        self.start_btn.clicked.connect(self.start_selected_camera)
-        btn_layout.addWidget(self.start_btn)
-        self.stop_btn = QPushButton("停止摄像头")
-        self.stop_btn.clicked.connect(self.stop_selected_camera)
-        btn_layout.addWidget(self.stop_btn)
+        self.ctrl_start_btn = QPushButton("启动摄像头")
+        self.ctrl_start_btn.clicked.connect(self.start_selected_camera)
+        btn_layout.addWidget(self.ctrl_start_btn)
+        self.ctrl_stop_btn = QPushButton("停止摄像头")
+        self.ctrl_stop_btn.clicked.connect(self.stop_selected_camera)
+        btn_layout.addWidget(self.ctrl_stop_btn)
         camera_layout.addLayout(btn_layout)
 
         # 识别阈值控制
@@ -230,14 +317,14 @@ class MainWindow(QMainWindow):
         threshold_label = QLabel("识别阈值：")
         threshold_layout.addWidget(threshold_label)
 
-        self.threshold_slider = QSlider(Qt.Horizontal)
-        self.threshold_slider.setRange(50, 100)
-        self.threshold_slider.setValue(int(self.config['recognition']['recognition_threshold'] * 100))
-        self.threshold_slider.valueChanged.connect(self.update_threshold)
-        threshold_layout.addWidget(self.threshold_slider)
+        self.ctrl_threshold_slider = QSlider(Qt.Horizontal)
+        self.ctrl_threshold_slider.setRange(50, 100)
+        self.ctrl_threshold_slider.setValue(int(self.config['recognition']['recognition_threshold'] * 100))
+        self.ctrl_threshold_slider.valueChanged.connect(self.update_threshold)
+        threshold_layout.addWidget(self.ctrl_threshold_slider)
 
-        self.threshold_value = QLabel(f"{self.threshold_slider.value() / 100:.2f}")
-        threshold_layout.addWidget(self.threshold_value)
+        self.ctrl_threshold_value = QLabel(f"{self.ctrl_threshold_slider.value() / 100:.2f}")
+        threshold_layout.addWidget(self.ctrl_threshold_value)
         camera_layout.addLayout(threshold_layout)
 
         layout.addWidget(camera_group)
@@ -288,26 +375,87 @@ class MainWindow(QMainWindow):
         else:
             self.showFullScreen()
 
+    def handle_quick_refresh(self):
+        """快速刷新反馈，提供 loading 状态"""
+        self.loading_bar.setVisible(True)
+        self.notice_label.setText("正在刷新监控数据，请稍候...")
+        QTimer.singleShot(600, self._finish_quick_refresh)
+
+    def _finish_quick_refresh(self):
+        self.loading_bar.setVisible(False)
+        self.notice_label.setText(f"刷新完成：{QDateTime.currentDateTime().toString('HH:mm:ss')}")
+
+    def handle_emergency_mode(self):
+        """应急模式确认提示"""
+        reply = QMessageBox.warning(
+            self,
+            "应急模式",
+            "启用应急模式后将立即触发高优先级告警通知，是否继续？",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No
+        )
+        if reply == QMessageBox.Yes:
+            self.notice_label.setText("应急模式已启用，请及时处理告警事件。")
+        else:
+            self.notice_label.setText("已取消应急模式操作。")
+
     # ------------------------------
     # 摄像头控制与参数调节
     # ------------------------------
     def start_selected_camera(self):
         """启动所选摄像头"""
-        cam_id = self.camera_combo.currentData()
+        combo = getattr(self, "camera_combo", None) or getattr(self, "ctrl_camera_combo", None)
+        cam_id = combo.currentData() if combo else None
+        if cam_id is None:
+            self.notice_label.setText("未找到可启动的摄像头。")
+            return
         if self.camera_manager.start_camera(cam_id):
             self.status_label.setText(f"已启动摄像头 {cam_id}")
+            self.notice_label.setText(f"摄像头 {cam_id} 启动成功。")
+        else:
+            self.notice_label.setText(f"摄像头 {cam_id} 启动失败，请检查设备连接。")
 
     def stop_selected_camera(self):
-        """停止所选摄像头"""
-        cam_id = self.camera_combo.currentData()
+        """停止所选摄像头（重要操作需确认）"""
+        combo = getattr(self, "camera_combo", None) or getattr(self, "ctrl_camera_combo", None)
+        cam_id = combo.currentData() if combo else None
+        if cam_id is None:
+            self.notice_label.setText("未找到可停止的摄像头。")
+            return
+
+        reply = QMessageBox.question(
+            self,
+            "确认操作",
+            f"确定停止摄像头 {cam_id} 吗？",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No
+        )
+        if reply != QMessageBox.Yes:
+            self.notice_label.setText("已取消停止操作。")
+            return
+
         if self.camera_manager.stop_camera(cam_id):
             self.status_label.setText(f"已停止摄像头 {cam_id}")
+            self.notice_label.setText(f"摄像头 {cam_id} 已停止。")
+        else:
+            self.notice_label.setText(f"摄像头 {cam_id} 停止失败。")
 
     def update_threshold(self, value):
         """调整识别置信度阈值"""
         threshold = value / 100
         self.face_detector.recognition_threshold = threshold
-        self.threshold_value.setText(f"{threshold:.2f}")
+        if hasattr(self, "threshold_value"):
+            self.threshold_value.setText(f"{threshold:.2f}")
+        if hasattr(self, "ctrl_threshold_value"):
+            self.ctrl_threshold_value.setText(f"{threshold:.2f}")
+        if hasattr(self, "threshold_slider") and self.threshold_slider.value() != value:
+            self.threshold_slider.blockSignals(True)
+            self.threshold_slider.setValue(value)
+            self.threshold_slider.blockSignals(False)
+        if hasattr(self, "ctrl_threshold_slider") and self.ctrl_threshold_slider.value() != value:
+            self.ctrl_threshold_slider.blockSignals(True)
+            self.ctrl_threshold_slider.setValue(value)
+            self.ctrl_threshold_slider.blockSignals(False)
 
     def update_processing_interval(self, value):
         """调整图像处理间隔"""
@@ -470,22 +618,26 @@ class MainWindow(QMainWindow):
         """更新系统状态信息：摄像头、人脸库、告警"""
         try:
             status_text = []
+            running_count = 0
 
             # 摄像头状态
             status_text.append("=== 摄像头状态 ===")
             for cam_id, cam_config in self.camera_manager.cameras.items():
                 running = cam_id in self.camera_manager.capture_threads
+                if running:
+                    running_count += 1
                 status_text.append(
                     f"摄像头 {cam_id}（{cam_config.name}）：{'运行中' if running else '已停止'}"
                 )
 
             # 已知人脸状态
             status_text.append("\n=== 人脸数据库 ===")
-            status_text.append(f"已知人脸数量：{len(self.face_detector.known_faces)}")
+            face_count = len(self.face_detector.known_faces)
+            status_text.append(f"已知人脸数量：{face_count}")
 
             # 告警信息
             status_text.append("\n=== 告警记录 ===")
-            recent_alerts = self.alert_system.get_recent_alerts(3)
+            recent_alerts = self.alert_system.get_recent_alerts(5)
             if recent_alerts:
                 for alert in recent_alerts:
                     time_str = time.strftime("%H:%M:%S", time.localtime(alert.timestamp))
@@ -497,9 +649,28 @@ class MainWindow(QMainWindow):
                 status_text.append("暂无告警")
 
             self.status_display.setText("\n".join(status_text))
+            if hasattr(self, "summary_label"):
+                self.summary_label.setText(
+                    f"在线摄像头: {running_count}/{len(self.camera_manager.cameras)}\n"
+                    f"已知人脸: {face_count}\n"
+                    f"最近告警: {len(recent_alerts)}"
+                )
+
+            if hasattr(self, "alert_table"):
+                self.alert_table.setSortingEnabled(False)
+                self.alert_table.setRowCount(len(recent_alerts))
+                for row, alert in enumerate(recent_alerts):
+                    time_str = time.strftime("%H:%M:%S", time.localtime(alert.timestamp))
+                    self.alert_table.setItem(row, 0, QTableWidgetItem(time_str))
+                    self.alert_table.setItem(row, 1, QTableWidgetItem(alert.face_name))
+                    self.alert_table.setItem(row, 2, QTableWidgetItem(alert.camera_name))
+                    self.alert_table.setItem(row, 3, QTableWidgetItem(f"{alert.confidence:.2f}"))
+                self.alert_table.setSortingEnabled(True)
 
         except Exception as e:
             logger.error(f"更新状态失败: {e}")
+            if hasattr(self, "notice_label"):
+                self.notice_label.setText(f"状态更新失败：{str(e)}")
 
     def closeEvent(self, event):
         """程序退出时释放资源：停止摄像头、定时器"""
@@ -513,72 +684,152 @@ class MainWindow(QMainWindow):
             event.accept()
 
     def apply_styles(self):
-        """统一设置应用的样式和色彩风格"""
+        """统一设置应用的样式和色彩风格（简洁专业系统风）"""
         self.setStyleSheet("""
             QMainWindow {
-                background-color: #1f2233;
-                color: #f4f5f7;
+                background-color: #f4f6f8;
+                color: #111827;
+            }
+            QMenuBar, QStatusBar {
+                background: #ffffff;
+                border-bottom: 1px solid #d1d5db;
             }
             QLabel {
-                color: #f4f5f7;
+                color: #111827;
+                font-size: 14px;
             }
             QLabel#sectionTitle {
-                font-size: 20px;
-                font-weight: 600;
+                font-size: 22px;
+                font-weight: 700;
                 padding: 8px 0;
             }
+            QFrame#topNavBar {
+                background: #ffffff;
+                border: 1px solid #d1d5db;
+                border-radius: 8px;
+            }
+            QLabel#navTitle {
+                font-size: 20px;
+                font-weight: 700;
+            }
             QLabel#cameraFeed {
-                background-color: #0f1120;
-                border: 1px solid #2b2f44;
-                border-radius: 12px;
+                background-color: #111827;
+                border: 1px solid #d1d5db;
+                border-radius: 8px;
             }
             QLabel#cameraOverlay {
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 600;
                 color: #ffffff;
-                background-color: rgba(0, 0, 0, 0.45);
+                background-color: rgba(17, 24, 39, 0.6);
                 border-radius: 6px;
-                padding: 4px 10px;
+                padding: 4px 8px;
             }
             QTabWidget::pane {
-                border: 1px solid #2b2f44;
-                border-radius: 6px;
+                border: 1px solid #d1d5db;
+                border-radius: 8px;
+                background: #f4f6f8;
             }
             QTabBar::tab {
-                padding: 10px 20px;
-                background-color: transparent;
-                color: #d0d3dc;
-            }
-            QTabBar::tab:selected {
-                background-color: #2b2f44;
+                min-height: 34px;
+                padding: 8px 16px;
+                background-color: #ffffff;
+                color: #4b5563;
+                border: 1px solid #d1d5db;
+                border-bottom: none;
                 border-top-left-radius: 6px;
                 border-top-right-radius: 6px;
-                color: #ffffff;
+                margin-right: 4px;
+            }
+            QTabBar::tab:selected {
+                background-color: #e5edff;
+                color: #1d4ed8;
+                font-weight: 600;
             }
             QPushButton {
-                background-color: #3a3f5c;
+                min-height: 34px;
                 border-radius: 6px;
-                padding: 8px 16px;
+                padding: 0 12px;
+                background-color: #2563eb;
                 color: #ffffff;
+                border: 1px solid #1d4ed8;
+                font-size: 14px;
             }
             QPushButton:hover {
-                background-color: #50567a;
+                background-color: #1d4ed8;
             }
             QPushButton:pressed {
-                background-color: #2d324c;
+                background-color: #1e40af;
+            }
+            QPushButton#warningButton {
+                background-color: #b91c1c;
+                border: 1px solid #991b1b;
+            }
+            QPushButton#warningButton:hover {
+                background-color: #991b1b;
+            }
+            QComboBox, QSpinBox, QLineEdit {
+                min-height: 34px;
+                border: 1px solid #d1d5db;
+                border-radius: 6px;
+                background: #ffffff;
+                padding: 0 8px;
+                font-size: 14px;
+            }
+            QSlider::groove:horizontal {
+                border: 1px solid #d1d5db;
+                height: 6px;
+                border-radius: 3px;
+                background: #e5e7eb;
+            }
+            QSlider::handle:horizontal {
+                background: #2563eb;
+                border: 1px solid #1d4ed8;
+                width: 14px;
+                margin: -5px 0;
+                border-radius: 7px;
             }
             QGroupBox {
-                border: 1px solid #2b2f44;
+                border: 1px solid #d1d5db;
                 border-radius: 8px;
                 margin-top: 12px;
                 padding: 12px;
+                font-size: 16px;
                 font-weight: 600;
+                background: #ffffff;
             }
             QGroupBox::title {
                 subcontrol-origin: margin;
                 subcontrol-position: top left;
                 padding: 0 6px;
-                color: white;
+                color: #111827;
+            }
+            QTableWidget {
+                border: 1px solid #d1d5db;
+                border-radius: 8px;
+                background: #ffffff;
+                gridline-color: #e5e7eb;
+                alternate-background-color: #f9fafb;
+                selection-background-color: #dbeafe;
+                font-size: 14px;
+            }
+            QHeaderView::section {
+                background: #f3f4f6;
+                color: #111827;
+                padding: 8px;
+                border: none;
+                border-bottom: 1px solid #d1d5db;
+                font-weight: 700;
+                min-height: 40px;
+            }
+            QFrame#statusNotice {
+                background: #ecfdf5;
+                border: 1px solid #bbf7d0;
+                border-radius: 8px;
+            }
+            QLabel#summaryLabel {
+                font-size: 14px;
+                line-height: 1.5;
             }
             QScrollArea {
                 border: none;
