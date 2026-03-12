@@ -42,6 +42,7 @@ class MainWindow(QMainWindow):
         self.setGeometry(100, 100, 1200, 800)
 
         self.processing_interval = 2.0  # 图像处理间隔时间（秒）
+        self.base_font_size = 20
 
         # --- 初始化核心组件 ---
         self.face_detector = FaceDetector(config)                         # 人脸检测与识别模块
@@ -340,6 +341,20 @@ class MainWindow(QMainWindow):
         interval_layout.addWidget(self.interval_spin)
         layout.addWidget(interval_group)
 
+        # 字体大小控制（适老化）
+        font_group = QGroupBox("显示设置")
+        font_layout = QHBoxLayout(font_group)
+        font_layout.addWidget(QLabel("字体大小："))
+        self.font_size_slider = QSlider(Qt.Horizontal)
+        self.font_size_slider.setRange(16, 32)
+        self.font_size_slider.setValue(self.base_font_size)
+        self.font_size_slider.setTickInterval(2)
+        self.font_size_slider.valueChanged.connect(self.update_font_size)
+        font_layout.addWidget(self.font_size_slider, 1)
+        self.font_size_label = QLabel(f"{self.base_font_size}px")
+        font_layout.addWidget(self.font_size_label)
+        layout.addWidget(font_group)
+
         # 系统状态显示
         status_group = QGroupBox("系统状态")
         status_layout = QVBoxLayout(status_group)
@@ -460,6 +475,14 @@ class MainWindow(QMainWindow):
     def update_processing_interval(self, value):
         """调整图像处理间隔"""
         self.processing_interval = value / 1000
+
+    def update_font_size(self, value):
+        """动态调整界面字体，保障大字号下控件自适应"""
+        self.base_font_size = value
+        if hasattr(self, "font_size_label"):
+            self.font_size_label.setText(f"{value}px")
+        self.apply_styles()
+        self.adjustSize()
 
     # ------------------------------
     # 主循环与图像处理
@@ -685,7 +708,15 @@ class MainWindow(QMainWindow):
 
     def apply_styles(self):
         """统一设置应用的样式和色彩风格（简洁专业系统风）"""
-        self.setStyleSheet("""
+        base = self.base_font_size
+        title = base + 8
+        nav_title = base + 6
+        tab_height = base * 2 + 6
+        control_height = base * 2 + 8
+        overlay = max(16, base - 2)
+        group_title = base + 2
+
+        self.setStyleSheet(f"""
             QMainWindow {
                 background-color: #f4f6f8;
                 color: #111827;
@@ -693,13 +724,14 @@ class MainWindow(QMainWindow):
             QMenuBar, QStatusBar {
                 background: #ffffff;
                 border-bottom: 1px solid #d1d5db;
+                font-size: {base}px;
             }
             QLabel {
                 color: #111827;
-                font-size: 14px;
+                font-size: {base}px;
             }
             QLabel#sectionTitle {
-                font-size: 22px;
+                font-size: {title}px;
                 font-weight: 700;
                 padding: 8px 0;
             }
@@ -709,7 +741,7 @@ class MainWindow(QMainWindow):
                 border-radius: 8px;
             }
             QLabel#navTitle {
-                font-size: 20px;
+                font-size: {nav_title}px;
                 font-weight: 700;
             }
             QLabel#cameraFeed {
@@ -718,7 +750,7 @@ class MainWindow(QMainWindow):
                 border-radius: 8px;
             }
             QLabel#cameraOverlay {
-                font-size: 13px;
+                font-size: {overlay}px;
                 font-weight: 600;
                 color: #ffffff;
                 background-color: rgba(17, 24, 39, 0.6);
@@ -731,7 +763,7 @@ class MainWindow(QMainWindow):
                 background: #f4f6f8;
             }
             QTabBar::tab {
-                min-height: 34px;
+                min-height: {tab_height}px;
                 padding: 8px 16px;
                 background-color: #ffffff;
                 color: #4b5563;
@@ -740,6 +772,7 @@ class MainWindow(QMainWindow):
                 border-top-left-radius: 6px;
                 border-top-right-radius: 6px;
                 margin-right: 4px;
+                font-size: {base}px;
             }
             QTabBar::tab:selected {
                 background-color: #e5edff;
@@ -747,13 +780,13 @@ class MainWindow(QMainWindow):
                 font-weight: 600;
             }
             QPushButton {
-                min-height: 34px;
+                min-height: {control_height}px;
                 border-radius: 6px;
-                padding: 0 12px;
+                padding: 4px 16px;
                 background-color: #2563eb;
                 color: #ffffff;
                 border: 1px solid #1d4ed8;
-                font-size: 14px;
+                font-size: {base}px;
             }
             QPushButton:hover {
                 background-color: #1d4ed8;
@@ -769,32 +802,32 @@ class MainWindow(QMainWindow):
                 background-color: #991b1b;
             }
             QComboBox, QSpinBox, QLineEdit {
-                min-height: 34px;
+                min-height: {control_height}px;
                 border: 1px solid #d1d5db;
                 border-radius: 6px;
                 background: #ffffff;
                 padding: 0 8px;
-                font-size: 14px;
+                font-size: {base}px;
             }
             QSlider::groove:horizontal {
                 border: 1px solid #d1d5db;
-                height: 6px;
+                height: 8px;
                 border-radius: 3px;
                 background: #e5e7eb;
             }
             QSlider::handle:horizontal {
                 background: #2563eb;
                 border: 1px solid #1d4ed8;
-                width: 14px;
-                margin: -5px 0;
-                border-radius: 7px;
+                width: 20px;
+                margin: -7px 0;
+                border-radius: 10px;
             }
             QGroupBox {
                 border: 1px solid #d1d5db;
                 border-radius: 8px;
                 margin-top: 12px;
                 padding: 12px;
-                font-size: 16px;
+                font-size: {group_title}px;
                 font-weight: 600;
                 background: #ffffff;
             }
@@ -811,7 +844,7 @@ class MainWindow(QMainWindow):
                 gridline-color: #e5e7eb;
                 alternate-background-color: #f9fafb;
                 selection-background-color: #dbeafe;
-                font-size: 14px;
+                font-size: {base}px;
             }
             QHeaderView::section {
                 background: #f3f4f6;
@@ -820,7 +853,8 @@ class MainWindow(QMainWindow):
                 border: none;
                 border-bottom: 1px solid #d1d5db;
                 font-weight: 700;
-                min-height: 40px;
+                min-height: {control_height + 6}px;
+                font-size: {base}px;
             }
             QFrame#statusNotice {
                 background: #ecfdf5;
@@ -828,7 +862,7 @@ class MainWindow(QMainWindow):
                 border-radius: 8px;
             }
             QLabel#summaryLabel {
-                font-size: 14px;
+                font-size: {base}px;
                 line-height: 1.5;
             }
             QScrollArea {
