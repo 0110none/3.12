@@ -295,6 +295,8 @@ class MainWindow(QMainWindow):
         controls_tab = QWidget()
         self.tab_widget.addTab(controls_tab, "控制")
         layout = QVBoxLayout(controls_tab)
+        layout.setSpacing(16)
+        layout.setContentsMargins(16, 16, 16, 16)
 
         # 摄像头控制区
         camera_group = QGroupBox("摄像头控制")
@@ -366,6 +368,7 @@ class MainWindow(QMainWindow):
         self.status_display.setWordWrap(True)
         status_layout.addWidget(self.status_display)
         layout.addWidget(status_group)
+        layout.addStretch(1)
 
     def setup_history_tab(self):
         """历史记录界面：整合 HistoryViewer 模块"""
@@ -714,22 +717,23 @@ class MainWindow(QMainWindow):
     def apply_styles(self):
         """统一设置应用的样式和色彩风格（简洁专业系统风）"""
         base = self.base_font_size
-        title = base + 8
-        nav_title = base + 6
-        tab_height = base * 2 + 6
-        control_height = base * 2 + 8
+        title = base + 6
+        nav_title = base + 4
+        tab_height = base * 2 + 4
+        control_height = base * 2 + 6
         overlay = max(16, base - 2)
-        group_title = base + 2
+        group_title = base + 1
 
         self.setStyleSheet(f"""
             QMainWindow {{
-                background-color: #f4f6f8;
+                background-color: #f3f5f7;
                 color: #111827;
             }}
             QMenuBar, QStatusBar {{
                 background: #ffffff;
-                border-bottom: 1px solid #d1d5db;
+                border-bottom: 1px solid #d9dee5;
                 font-size: {base}px;
+                padding: 2px 8px;
             }}
             QLabel {{
                 color: #111827;
@@ -742,7 +746,7 @@ class MainWindow(QMainWindow):
             }}
             QFrame#topNavBar {{
                 background: #ffffff;
-                border: 1px solid #d1d5db;
+                border: 1px solid #d9dee5;
                 border-radius: 8px;
             }}
             QLabel#navTitle {{
@@ -751,7 +755,7 @@ class MainWindow(QMainWindow):
             }}
             QLabel#cameraFeed {{
                 background-color: #111827;
-                border: 1px solid #d1d5db;
+                border: 1px solid #d9dee5;
                 border-radius: 8px;
             }}
             QLabel#cameraOverlay {{
@@ -763,16 +767,16 @@ class MainWindow(QMainWindow):
                 padding: 4px 8px;
             }}
             QTabWidget::pane {{
-                border: 1px solid #d1d5db;
+                border: 1px solid #d9dee5;
                 border-radius: 8px;
-                background: #f4f6f8;
+                background: #f8fafc;
             }}
             QTabBar::tab {{
                 min-height: {tab_height}px;
-                padding: 8px 16px;
+                padding: 6px 16px;
                 background-color: #ffffff;
                 color: #4b5563;
-                border: 1px solid #d1d5db;
+                border: 1px solid #d9dee5;
                 border-bottom: none;
                 border-top-left-radius: 6px;
                 border-top-right-radius: 6px;
@@ -780,24 +784,25 @@ class MainWindow(QMainWindow):
                 font-size: {base}px;
             }}
             QTabBar::tab:selected {{
-                background-color: #e5edff;
-                color: #1d4ed8;
+                background-color: #edf4ff;
+                color: #1e40af;
                 font-weight: 600;
             }}
             QPushButton {{
                 min-height: {control_height}px;
                 border-radius: 6px;
-                padding: 4px 16px;
-                background-color: #2563eb;
+                padding: 2px 14px;
+                background-color: #1f6feb;
                 color: #ffffff;
-                border: 1px solid #1d4ed8;
+                border: 1px solid #1e5fc8;
                 font-size: {base}px;
+                font-weight: 500;
             }}
             QPushButton:hover {{
-                background-color: #1d4ed8;
+                background-color: #1d5fca;
             }}
             QPushButton:pressed {{
-                background-color: #1e40af;
+                background-color: #1a4fa8;
             }}
             QPushButton#warningButton {{
                 background-color: #b91c1c;
@@ -808,30 +813,33 @@ class MainWindow(QMainWindow):
             }}
             QComboBox, QSpinBox, QLineEdit {{
                 min-height: {control_height}px;
-                border: 1px solid #d1d5db;
+                border: 1px solid #cfd6df;
                 border-radius: 6px;
                 background: #ffffff;
                 padding: 0 8px;
                 font-size: {base}px;
             }}
+            QComboBox:focus, QSpinBox:focus, QLineEdit:focus {{
+                border: 1px solid #1f6feb;
+            }}
             QSlider::groove:horizontal {{
-                border: 1px solid #d1d5db;
+                border: 1px solid #d4dae2;
                 height: 8px;
                 border-radius: 3px;
                 background: #e5e7eb;
             }}
             QSlider::handle:horizontal {{
-                background: #2563eb;
-                border: 1px solid #1d4ed8;
-                width: 20px;
+                background: #1f6feb;
+                border: 1px solid #1e5fc8;
+                width: 18px;
                 margin: -7px 0;
-                border-radius: 10px;
+                border-radius: 9px;
             }}
             QGroupBox {{
-                border: 1px solid #d1d5db;
+                border: 1px solid #d9dee5;
                 border-radius: 8px;
                 margin-top: 12px;
-                padding: 12px;
+                padding: 14px;
                 font-size: {group_title}px;
                 font-weight: 600;
                 background: #ffffff;
@@ -843,7 +851,7 @@ class MainWindow(QMainWindow):
                 color: #111827;
             }}
             QTableWidget {{
-                border: 1px solid #d1d5db;
+                border: 1px solid #d9dee5;
                 border-radius: 8px;
                 background: #ffffff;
                 gridline-color: #e5e7eb;
@@ -852,22 +860,36 @@ class MainWindow(QMainWindow):
                 font-size: {base}px;
             }}
             QHeaderView::section {{
-                background: #f3f4f6;
+                background: #f6f8fb;
                 color: #111827;
                 padding: 8px;
                 border: none;
-                border-bottom: 1px solid #d1d5db;
+                border-bottom: 1px solid #d9dee5;
                 font-weight: 700;
                 min-height: {control_height + 6}px;
                 font-size: {base}px;
             }}
+            QScrollBar:vertical {{
+                background: transparent;
+                width: 10px;
+                margin: 2px;
+            }}
+            QScrollBar::handle:vertical {{
+                background: #c5ced9;
+                border-radius: 4px;
+                min-height: 28px;
+            }}
+            QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {{
+                height: 0px;
+            }}
             QFrame#statusNotice {{
-                background: #ecfdf5;
-                border: 1px solid #bbf7d0;
+                background: #effcf5;
+                border: 1px solid #bfe8d0;
                 border-radius: 8px;
             }}
             QLabel#summaryLabel {{
                 font-size: {base}px;
+                line-height: 1.6;
             }}
             QScrollArea {{
                 border: none;
