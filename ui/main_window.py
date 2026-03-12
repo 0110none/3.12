@@ -33,6 +33,12 @@ class MainWindow(QMainWindow):
     提供统一的图形界面控制与监控视图。
     """
 
+    FONT_SIZE_OPTIONS = {
+        "中": 16,
+        "大": 20,
+        "特大": 24,
+    }
+
     def __init__(self, config):
         """初始化主界面及所有核心组件"""
         super().__init__()
@@ -342,14 +348,14 @@ class MainWindow(QMainWindow):
         font_group = QGroupBox("显示设置")
         font_layout = QHBoxLayout(font_group)
         font_layout.addWidget(QLabel("字体大小："))
-        self.font_size_slider = QSlider(Qt.Horizontal)
-        self.font_size_slider.setRange(16, 32)
-        self.font_size_slider.setValue(self.base_font_size)
-        self.font_size_slider.setTickInterval(2)
-        self.font_size_slider.valueChanged.connect(self.update_font_size)
-        font_layout.addWidget(self.font_size_slider, 1)
-        self.font_size_label = QLabel(f"{self.base_font_size}px")
-        font_layout.addWidget(self.font_size_label)
+        self.font_size_combo = QComboBox()
+        for label, size in self.FONT_SIZE_OPTIONS.items():
+            self.font_size_combo.addItem(f"{label}（{size}px）", size)
+        self.font_size_combo.currentIndexChanged.connect(self.update_font_size)
+        default_index = self.font_size_combo.findData(self.base_font_size)
+        if default_index >= 0:
+            self.font_size_combo.setCurrentIndex(default_index)
+        font_layout.addWidget(self.font_size_combo, 1)
         layout.addWidget(font_group)
 
         # 系统状态显示
@@ -473,13 +479,15 @@ class MainWindow(QMainWindow):
         """调整图像处理间隔"""
         self.processing_interval = value / 1000
 
-    def update_font_size(self, value):
-        """动态调整界面字体，保障大字号下控件自适应"""
-        self.base_font_size = value
-        if hasattr(self, "font_size_label"):
-            self.font_size_label.setText(f"{value}px")
+    def update_font_size(self, _index):
+        """根据预设档位更新字体大小（中/大/特大）"""
+        if not hasattr(self, "font_size_combo"):
+            return
+        selected_size = self.font_size_combo.currentData()
+        if selected_size is None:
+            return
+        self.base_font_size = int(selected_size)
         self.apply_styles()
-        self.adjustSize()
 
     # ------------------------------
     # 主循环与图像处理
