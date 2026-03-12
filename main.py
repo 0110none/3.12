@@ -19,7 +19,7 @@ import yaml
 from pathlib import Path
 from loguru import logger
 from PyQt5.QtWidgets import QApplication, QSplashScreen
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QFont
 from PyQt5.QtCore import Qt, QTimer
 
 from ui.main_window import MainWindow
@@ -37,6 +37,10 @@ def load_config(config_path: str) -> dict:
         Path(config['app']['known_faces_dir']).mkdir(parents=True, exist_ok=True)
         Path(config['app']['log_dir']).mkdir(parents=True, exist_ok=True)
         Path(config['app'].get('export_dir', 'data/exports')).mkdir(parents=True, exist_ok=True)
+
+        # 默认优先使用 CUDA（若模型初始化失败会在 FaceDetector 内回退到 CPU）
+        recognition_cfg = config.setdefault('recognition', {})
+        recognition_cfg.setdefault('device', 'cuda')
 
         return config
     except Exception as e:
@@ -100,6 +104,7 @@ def main():
         setup_logging(config['app']['log_dir'])
 
         app = QApplication(sys.argv)
+        app.setFont(QFont("Microsoft YaHei", 15))
         splash = show_splash_screen(config)
         splash.show()
         app.processEvents()

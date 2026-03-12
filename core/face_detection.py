@@ -34,28 +34,49 @@ class FaceDetector:
         self.recognition_threshold = config['recognition']['recognition_threshold']  # 识别阈值
         self.detection_threshold = config['recognition']['detection_threshold']      # 检测阈值
         self.max_batch_size = config['recognition']['max_batch_size']
-        self.device = config['recognition']['device']                               # CPU / GPU
+        configured_device = config.get('recognition', {}).get('device', 'cuda')
+        self.device = configured_device if configured_device in {'cuda', 'cpu'} else 'cuda'  # 默认优先 CUDA
         self.analysis_enabled = config['recognition'].get('analysis_enabled', True) # 是否启用年龄性别分析
         self.model = self._load_model()   # 加载 InsightFace 模型
         self.known_faces: List[KnownFace] = []  # 已知人脸列表
 
     def _load_model(self) -> FaceAnalysis:
-        """加载 InsightFace 模型"""
+        """加载 InsightFace 模型：默认优先 CUDA，不可用时回退 CPU"""
+        model = FaceAnalysis(
+            name='buffalo_l',
+            root='./',
+            allowed_modules=['detection', 'recognition', 'genderage']
+        )
+
+        preferred_ctx = 0 if self.device == 'cuda' else -1
+        fallback_ctx = -1 if preferred_ctx == 0 else 0
+
         try:
-            model = FaceAnalysis(
-                name='buffalo_l',
-                root='./',
-                allowed_modules=['detection', 'recognition', 'genderage']
-            )
             model.prepare(
-                ctx_id=0 if self.device == 'cuda' else -1,  # GPU 或 CPU 模式
+                ctx_id=preferred_ctx,
                 det_thresh=self.detection_threshold,
                 det_size=(640, 640)
             )
-            logger.success("人脸检测模型加载成功")
+            self.device = 'cuda' if preferred_ctx == 0 else 'cpu'
+            logger.success(f"人脸检测模型加载成功，当前设备: {self.device.upper()}")
             return model
-        except Exception as e:
-            logger.error(f"加载人脸检测模型失败: {e}")
+        except Exception as primary_error:
+            if preferred_ctx == 0:
+                logger.warning(f"CUDA 初始化失败，自动回退到 CPU: {primary_error}")
+                try:
+                    model.prepare(
+                        ctx_id=fallback_ctx,
+                        det_thresh=self.detection_threshold,
+                        det_size=(640, 640)
+                    )
+                    self.device = 'cpu'
+                    logger.success("人脸检测模型已回退到 CPU 并加载成功")
+                    return model
+                except Exception as fallback_error:
+                    logger.error(f"CPU 回退加载失败: {fallback_error}")
+                    raise
+
+            logger.error(f"加载人脸检测模型失败: {primary_error}")
             raise
 
     def load_known_faces(self, known_faces_dir: str) -> None:
