@@ -715,186 +715,158 @@ class MainWindow(QMainWindow):
             event.accept()
 
     def apply_styles(self):
-        """统一设置应用的样式和色彩风格（简洁专业系统风）"""
-        base = self.base_font_size
-        title = base + 6
-        nav_title = base + 4
-        tab_height = base * 2 + 4
-        control_height = base * 2 + 6
-        overlay = max(16, base - 2)
-        group_title = base + 1
+    """统一设置应用的样式和色彩风格（简洁专业系统风）"""
+    base = self.base_font_size
+    title = base + 6
+    secondary = max(12, base - 2)
+    tab_height = base * 2
+    control_height = base * 2 + 8
+    overlay = max(16, base - 2)
+    group_title = base + 1
 
-        self.setStyleSheet(f"""
-            QMainWindow {{
-                background-color: #f3f5f7;
-                color: #111827;
-            }}
-            QMenuBar, QStatusBar {{
-                background: #ffffff;
-                border-bottom: 1px solid #d9dee5;
-                font-size: {base}px;
-                padding: 2px 8px;
-            }}
-            QLabel {{
-                color: #111827;
-                font-size: {base}px;
-            }}
-            QLabel#sectionTitle {{
-                font-size: {title}px;
-                font-weight: 700;
-                padding: 8px 0;
-            }}
-            QFrame#topNavBar {{
-                background: #ffffff;
-                border: 1px solid #d9dee5;
-                border-radius: 8px;
-            }}
-            QLabel#navTitle {{
-                font-size: {nav_title}px;
-                font-weight: 700;
-            }}
-            QLabel#cameraFeed {{
-                background-color: #111827;
-                border: 1px solid #d9dee5;
-                border-radius: 8px;
-            }}
-            QLabel#cameraOverlay {{
-                font-size: {overlay}px;
-                font-weight: 600;
-                color: #ffffff;
-                background-color: rgba(17, 24, 39, 0.6);
-                border-radius: 6px;
-                padding: 4px 8px;
-            }}
-            QTabWidget::pane {{
-                border: 1px solid #d9dee5;
-                border-radius: 8px;
-                background: #f8fafc;
-            }}
-            QTabBar::tab {{
-                min-height: {tab_height}px;
-                padding: 6px 16px;
-                background-color: #ffffff;
-                color: #4b5563;
-                border: 1px solid #d9dee5;
-                border-bottom: none;
-                border-top-left-radius: 6px;
-                border-top-right-radius: 6px;
-                margin-right: 4px;
-                font-size: {base}px;
-            }}
-            QTabBar::tab:selected {{
-                background-color: #edf4ff;
-                color: #1e40af;
-                font-weight: 600;
-            }}
-            QPushButton {{
-                min-height: {control_height}px;
-                border-radius: 6px;
-                padding: 2px 14px;
-                background-color: #1f6feb;
-                color: #ffffff;
-                border: 1px solid #1e5fc8;
-                font-size: {base}px;
-                font-weight: 500;
-            }}
-            QPushButton:hover {{
-                background-color: #1d5fca;
-            }}
-            QPushButton:pressed {{
-                background-color: #1a4fa8;
-            }}
-            QPushButton#warningButton {{
-                background-color: #b91c1c;
-                border: 1px solid #991b1b;
-            }}
-            QPushButton#warningButton:hover {{
-                background-color: #991b1b;
-            }}
-            QComboBox, QSpinBox, QLineEdit {{
-                min-height: {control_height}px;
-                border: 1px solid #cfd6df;
-                border-radius: 6px;
-                background: #ffffff;
-                padding: 0 8px;
-                font-size: {base}px;
-            }}
-            QComboBox:focus, QSpinBox:focus, QLineEdit:focus {{
-                border: 1px solid #1f6feb;
-            }}
-            QSlider::groove:horizontal {{
-                border: 1px solid #d4dae2;
-                height: 8px;
-                border-radius: 3px;
-                background: #e5e7eb;
-            }}
-            QSlider::handle:horizontal {{
-                background: #1f6feb;
-                border: 1px solid #1e5fc8;
-                width: 18px;
-                margin: -7px 0;
-                border-radius: 9px;
-            }}
-            QGroupBox {{
-                border: 1px solid #d9dee5;
-                border-radius: 8px;
-                margin-top: 12px;
-                padding: 14px;
-                font-size: {group_title}px;
-                font-weight: 600;
-                background: #ffffff;
-            }}
-            QGroupBox::title {{
-                subcontrol-origin: margin;
-                subcontrol-position: top left;
-                padding: 0 6px;
-                color: #111827;
-            }}
-            QTableWidget {{
-                border: 1px solid #d9dee5;
-                border-radius: 8px;
-                background: #ffffff;
-                gridline-color: #e5e7eb;
-                alternate-background-color: #f9fafb;
-                selection-background-color: #dbeafe;
-                font-size: {base}px;
-            }}
-            QHeaderView::section {{
-                background: #f6f8fb;
-                color: #111827;
-                padding: 8px;
-                border: none;
-                border-bottom: 1px solid #d9dee5;
-                font-weight: 700;
-                min-height: {control_height + 6}px;
-                font-size: {base}px;
-            }}
-            QScrollBar:vertical {{
-                background: transparent;
-                width: 10px;
-                margin: 2px;
-            }}
-            QScrollBar::handle:vertical {{
-                background: #c5ced9;
-                border-radius: 4px;
-                min-height: 28px;
-            }}
-            QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {{
-                height: 0px;
-            }}
-            QFrame#statusNotice {{
-                background: #effcf5;
-                border: 1px solid #bfe8d0;
-                border-radius: 8px;
-            }}
-            QLabel#summaryLabel {{
-                font-size: {base}px;
-                line-height: 1.6;
-            }}
-            QScrollArea {{
-                border: none;
-            }}
-            QFrame#cameraDisplay {{
-                background-color: transparent;
-            }}
-        """)
+    self.setStyleSheet(f"""
+        QMainWindow {{
+            background-color: #f4f6f8;
+            color: #111827;
+        }}
+        QMenuBar, QStatusBar {{
+            background: #ffffff;
+            border-bottom: 1px solid #d1d5db;
+            font-size: {base}px;
+        }}
+        QLabel {{
+            color: #111827;
+            font-size: {base}px;
+        }}
+        QLabel#sectionTitle {{
+            font-size: {title}px;
+            font-weight: 700;
+            padding: 8px 0;
+        }}
+        QLabel#cameraFeed {{
+            background-color: #111827;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+        }}
+        QLabel#cameraOverlay {{
+            font-size: {overlay}px;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: rgba(17, 24, 39, 0.6);
+            border-radius: 6px;
+            padding: 4px 8px;
+        }}
+        QTabWidget::pane {{
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: #f4f6f8;
+        }}
+        QTabBar::tab {{
+            min-height: {tab_height}px;
+            padding: 8px 16px;
+            background-color: #ffffff;
+            color: #4b5563;
+            border: 1px solid #d1d5db;
+            border-bottom: none;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            margin-right: 4px;
+            font-size: {secondary}px;
+        }}
+        QTabBar::tab:selected {{
+            background-color: #e5edff;
+            color: #1d4ed8;
+            font-weight: 600;
+        }}
+        QPushButton {{
+            min-height: {control_height}px;
+            border-radius: 6px;
+            padding: 4px 16px;
+            background-color: #2563eb;
+            color: #ffffff;
+            border: 1px solid #1d4ed8;
+            font-size: {base}px;
+        }}
+        QPushButton:hover {{
+            background-color: #1d4ed8;
+        }}
+        QPushButton:pressed {{
+            background-color: #1e40af;
+        }}
+        QPushButton#warningButton {{
+            background-color: #b91c1c;
+            border: 1px solid #991b1b;
+        }}
+        QPushButton#warningButton:hover {{
+            background-color: #991b1b;
+        }}
+        QComboBox, QSpinBox, QLineEdit {{
+            min-height: {control_height}px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background: #ffffff;
+            padding: 0 8px;
+            font-size: {base}px;
+        }}
+        QSlider::groove:horizontal {{
+            border: 1px solid #d1d5db;
+            height: 8px;
+            border-radius: 3px;
+            background: #e5e7eb;
+        }}
+        QSlider::handle:horizontal {{
+            background: #2563eb;
+            border: 1px solid #1d4ed8;
+            width: 20px;
+            margin: -7px 0;
+            border-radius: 10px;
+        }}
+        QGroupBox {{
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            margin-top: 12px;
+            padding: 12px;
+            font-size: {group_title}px;
+            font-weight: 600;
+            background: #ffffff;
+        }}
+        QGroupBox::title {{
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            padding: 0 6px;
+            color: #111827;
+        }}
+        QTableWidget {{
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: #ffffff;
+            gridline-color: #e5e7eb;
+            alternate-background-color: #f9fafb;
+            selection-background-color: #dbeafe;
+            font-size: {base}px;
+        }}
+        QHeaderView::section {{
+            background: #f3f4f6;
+            color: #111827;
+            padding: 8px;
+            border: none;
+            border-bottom: 1px solid #d1d5db;
+            font-weight: 700;
+            min-height: {control_height + 6}px;
+            font-size: {base}px;
+        }}
+        QFrame#statusNotice {{
+            background: #ecfdf5;
+            border: 1px solid #bbf7d0;
+            border-radius: 8px;
+        }}
+        QLabel#summaryLabel {{
+            font-size: {secondary}px;
+        }}
+        QScrollArea {{
+            border: none;
+        }}
+        QFrame#cameraDisplay {{
+            background-color: transparent;
+        }}
+    """)
