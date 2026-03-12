@@ -1,194 +1,91 @@
-// ====================
-// 主题切换与交互脚本
-// --------------------
-// 本文件负责着陆页的交互动画、主题切换、滚动效果等
-// 行为逻辑，所有注释均为中文以方便团队协作阅读。
-// ====================
+const records = [
+  { time: '2026-03-12 09:20:11', name: '张伟', camera: 'A-01', score: 0.95, state: '正常' },
+  { time: '2026-03-12 09:18:42', name: '未知人员', camera: 'B-03', score: 0.61, state: '告警' },
+  { time: '2026-03-12 09:15:35', name: '李敏', camera: 'A-01', score: 0.91, state: '正常' },
+  { time: '2026-03-12 09:12:06', name: '王芳', camera: 'B-03', score: 0.87, state: '正常' },
+  { time: '2026-03-12 09:10:27', name: '未知人员', camera: 'A-01', score: 0.58, state: '告警' },
+  { time: '2026-03-12 09:08:03', name: '赵强', camera: 'B-03', score: 0.89, state: '正常' }
+];
 
-// 主题切换按钮与文档主体引用
-const themeToggle = document.getElementById('themeToggle');
-const body = document.body;
+let page = 1;
+const pageSize = 4;
+let desc = true;
 
-// 读取本地缓存的主题偏好，默认为暗色模式
-const currentTheme = localStorage.getItem('theme') || 'dark';
-body.classList.add(currentTheme);
+const recordBody = document.getElementById('recordBody');
+const pageInfo = document.getElementById('pageInfo');
+const sortBtn = document.getElementById('sortTime');
+const cameraFilter = document.getElementById('cameraFilter');
+const keywordInput = document.getElementById('keyword');
+const statusText = document.getElementById('statusText');
 
-// 根据当前主题更新按钮图标（太阳/⽉亮）
-function updateThemeIcon() {
-    const icon = themeToggle.querySelector('i');
-    if (body.classList.contains('dark')) {
-        icon.className = 'fas fa-sun';
-    } else {
-        icon.className = 'fas fa-moon';
-    }
+function filteredData() {
+  const camera = cameraFilter.value;
+  const keyword = keywordInput.value.trim();
+  return records.filter(r => {
+    const camOk = camera === 'all' || r.camera === camera;
+    const kwOk = !keyword || r.name.includes(keyword) || r.camera.includes(keyword);
+    return camOk && kwOk;
+  });
 }
 
-// 页面加载后立即同步图标状态
-updateThemeIcon();
+function renderTable() {
+  const data = filteredData().sort((a, b) => desc ? b.time.localeCompare(a.time) : a.time.localeCompare(b.time));
+  const total = Math.max(1, Math.ceil(data.length / pageSize));
+  if (page > total) page = total;
+  const start = (page - 1) * pageSize;
+  const rows = data.slice(start, start + pageSize);
 
-themeToggle.addEventListener('click', () => {
-    if (body.classList.contains('dark')) {
-        body.classList.remove('dark');
-        body.classList.add('light');
-        localStorage.setItem('theme', 'light');
-    } else {
-        body.classList.remove('light');
-        body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-    }
-    updateThemeIcon();
-});
+  recordBody.innerHTML = rows.map(row => `
+    <tr>
+      <td>${row.time}</td>
+      <td>${row.name}</td>
+      <td>${row.camera}</td>
+      <td>${(row.score * 100).toFixed(1)}%</td>
+      <td class="${row.state === '正常' ? 'tag-ok' : 'tag-warn'}">${row.state}</td>
+    </tr>
+  `).join('') || '<tr><td colspan="5">暂无数据</td></tr>';
 
-// 站内导航平滑滚动
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// 监听 Feature 卡片是否进入视窗，以便触发渐进动画
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const delay = entry.target.dataset.delay || 0;
-            setTimeout(() => {
-                entry.target.classList.add('animate');
-            }, delay);
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-// 为所有卡片注册观测器
-document.querySelectorAll('.feature-card').forEach(card => {
-    observer.observe(card);
-});
-
-// 根据滚动距离调整头部背景透明度
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    if (window.scrollY > 100) {
-        header.style.background = 'rgba(0, 0, 0, 0.95)';
-    } else {
-        header.style.background = 'rgba(0, 0, 0, 0.8)';
-    }
-});
-
-// 为按钮添加点击涟漪效果
-document.querySelectorAll('.btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        // Create ripple effect
-        const ripple = document.createElement('span');
-        const rect = this.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
-        
-        ripple.style.width = ripple.style.height = size + 'px';
-        ripple.style.left = x + 'px';
-        ripple.style.top = y + 'px';
-        ripple.classList.add('ripple');
-        
-        this.appendChild(ripple);
-        
-        setTimeout(() => {
-            ripple.remove();
-        }, 600);
-    });
-});
-
-// 动态插入涟漪效果的样式定义
-const style = document.createElement('style');
-style.textContent = `
-    .btn {
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .ripple {
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.3);
-        transform: scale(0);
-        animation: ripple-animation 0.6s linear;
-        pointer-events: none;
-    }
-    
-    @keyframes ripple-animation {
-        to {
-            transform: scale(4);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
-
-// Hero 背景视差效果
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallax = document.querySelector('.hero-bg');
-    if (parallax) {
-        const speed = scrolled * 0.5;
-        parallax.style.transform = `translateY(${speed}px)`;
-    }
-});
-
-// 打字机标题效果（按需启用）
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
+  pageInfo.textContent = `第 ${page} / ${total} 页`;
 }
 
-// 页面加载完成后再尝试初始化打字机效果
-window.addEventListener('load', () => {
-    const heroTitle = document.querySelector('.hero-title-gradient');
-    if (heroTitle) {
-        const originalText = heroTitle.textContent;
-        // Uncomment the line below to enable typing effect
-        // typeWriter(heroTitle, originalText, 50);
-    }
+sortBtn.addEventListener('click', () => {
+  desc = !desc;
+  renderTable();
 });
 
-// 创建滚动进度条，提示用户当前阅读位置
-const scrollProgress = document.createElement('div');
-scrollProgress.style.cssText = `
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(135deg, #3b82f6, #ec4899);
-    z-index: 9999;
-    transition: width 0.1s ease;
-`;
-document.body.appendChild(scrollProgress);
-
-// 监听滚动事件并更新进度条宽度
-window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset;
-    const docHeight = document.body.offsetHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    scrollProgress.style.width = scrollPercent + '%';
+cameraFilter.addEventListener('change', () => {
+  page = 1;
+  renderTable();
 });
+keywordInput.addEventListener('input', () => {
+  page = 1;
+  renderTable();
+});
+
+document.getElementById('prevPage').addEventListener('click', () => {
+  if (page > 1) page -= 1;
+  renderTable();
+});
+
+document.getElementById('nextPage').addEventListener('click', () => {
+  page += 1;
+  renderTable();
+});
+
+const dialog = document.getElementById('confirmDialog');
+document.getElementById('exportBtn').addEventListener('click', () => dialog.showModal());
+document.getElementById('cancelExport').addEventListener('click', () => dialog.close());
+document.getElementById('confirmExport').addEventListener('click', () => {
+  dialog.close();
+  statusText.textContent = '导出任务已提交，系统正在后台生成文件。';
+});
+
+document.getElementById('refreshBtn').addEventListener('click', () => {
+  statusText.textContent = '数据已刷新，最后更新时间：' + new Date().toLocaleTimeString('zh-CN', { hour12: false });
+});
+
+document.getElementById('clearNotice').addEventListener('click', () => {
+  statusText.textContent = '系统运行正常，暂无未处理错误。';
+});
+
+renderTable();
