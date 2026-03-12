@@ -1,0 +1,27 @@
+app:
+  name: "Face"
+  version: "1.0.0"
+  threshold: 0.6
+  screenshot_dir: "data/screenshots"
+  known_faces_dir: "data/known_faces"
+  database_path: "data/database.db"
+  alert_sound: "assets/alert.wav"
+  unknown_alert_sound: "assets/alert_unknown.wav"
+  logo: "assets/logo.png"
+  log_dir: "logs"
+  export_dir: "data/exports"
+
+recognition:
+  detection_threshold: 0.5
+  recognition_threshold: 0.6
+  max_batch_size: 8
+  device: "cuda"  # or "cpu"
+  analysis_enabled: true  # Enable age/gender/emotion
+  age_estimation: true
+  gender_detection: true
+
+telegram:
+  enabled: true
+  bot_token: "8535017959:AAGZ2SL7RPTpeZeITZkXgG0Gg_2ARMQr83k"  # From @BotFather
+  chat_id: "5834699903"      # Get from @getidsbot
+  rate_limit: 30

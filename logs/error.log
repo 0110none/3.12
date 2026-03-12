@@ -1,0 +1,99 @@
+2025-11-08 21:42:07.518 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: [Errno 2] No such file or directory: 'config/camera_config.yaml'
+2025-11-08 21:42:07.518 | CRITICAL | __main__:main:184 - Application failed to start: [Errno 2] No such file or directory: 'config/camera_config.yaml'
+2025-11-08 21:47:23.334 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: [Errno 2] No such file or directory: 'config/camera_config.yaml'
+2025-11-08 21:47:23.335 | CRITICAL | __main__:main:184 - Application failed to start: [Errno 2] No such file or directory: 'config/camera_config.yaml'
+2025-11-08 21:51:54.404 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:51:54.405 | CRITICAL | __main__:main:184 - Application failed to start: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:55:20.542 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:55:20.542 | CRITICAL | __main__:main:184 - Application failed to start: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:55:31.633 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:55:31.633 | CRITICAL | __main__:main:184 - Application failed to start: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-09 21:31:32.625 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 21:32:01.975 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 21:38:56.659 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 21:39:45.193 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:20:34.731 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:21:55.474 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:24:56.927 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:25:42.883 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:30:10.988 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:32:30.972 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:34:50.608 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:34:52.523 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:35:46.783 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:35:57.186 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:35:59.063 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:36:01.161 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:36:05.780 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:36:43.216 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:36:56.404 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:37:32.529 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:49:35.079 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:55:09.063 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:58:40.138 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:58:58.832 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 23:01:13.046 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 23:02:38.167 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 23:08:18.302 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 23:15:19.909 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-10 03:09:05.168 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-10 03:09:16.512 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.104:8080/video
+2025-11-10 03:11:54.390 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-10 03:12:05.700 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.104:8080/video
+2025-11-10 03:13:18.265 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 17:51:46.400 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 17:59:14.850 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:06:53.143 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:09:00.769 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:15:52.887 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:23:41.841 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:44:59.769 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:56:26.333 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:59:41.042 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 19:07:11.056 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:21:53.019 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:22:18.306 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:31:49.697 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:32:14.923 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:39:44.328 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:40:09.408 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:40:25.571 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:45:21.422 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:45:46.547 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:46:03.984 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:46:29.061 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:49:31.119 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:49:56.242 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-16 22:37:47.510 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-16 22:37:58.797 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-17 01:28:24.190 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-17 01:28:35.523 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-17 01:31:08.669 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-17 01:31:58.307 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 3，源：1
+2025-11-17 01:31:58.307 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 2，源：1
+2025-11-17 01:31:58.307 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-17 01:32:09.585 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-27 21:18:23.756 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 2，源：1
+2025-11-27 21:18:23.757 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-27 21:18:23.757 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 3，源：1
+2025-11-27 21:18:48.893 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-29 20:35:55.524 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 2，源：1
+2025-11-29 20:35:55.525 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 3，源：1
+2025-11-29 20:35:55.525 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-11-29 20:36:20.743 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-29 20:36:51.881 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-11-29 20:36:51.881 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 2，源：1
+2025-11-29 20:37:10.209 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-01 23:42:16.651 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-01 23:42:51.562 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-08 00:01:12.350 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-08 00:01:37.580 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-12-29 12:11:30.279 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-29 12:11:45.081 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-12-30 03:10:20.059 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-30 03:11:49.368 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-12-30 03:36:16.058 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-30 03:37:10.191 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2026-03-12 18:48:20.965 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2026-03-12 18:48:51.586 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2026-03-12 22:53:09.011 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1

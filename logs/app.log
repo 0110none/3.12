@@ -1,0 +1,1759 @@
+2025-11-08 21:42:07.518 | SUCCESS  | core.face_detection:_load_model:54 - Face detection model loaded successfully
+2025-11-08 21:42:07.518 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: [Errno 2] No such file or directory: 'config/camera_config.yaml'
+2025-11-08 21:42:07.518 | CRITICAL | __main__:main:184 - Application failed to start: [Errno 2] No such file or directory: 'config/camera_config.yaml'
+2025-11-08 21:47:23.334 | SUCCESS  | core.face_detection:_load_model:54 - Face detection model loaded successfully
+2025-11-08 21:47:23.334 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: [Errno 2] No such file or directory: 'config/camera_config.yaml'
+2025-11-08 21:47:23.335 | CRITICAL | __main__:main:184 - Application failed to start: [Errno 2] No such file or directory: 'config/camera_config.yaml'
+2025-11-08 21:51:54.395 | SUCCESS  | core.face_detection:_load_model:54 - Face detection model loaded successfully
+2025-11-08 21:51:54.404 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:51:54.405 | CRITICAL | __main__:main:184 - Application failed to start: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:55:20.542 | SUCCESS  | core.face_detection:_load_model:54 - Face detection model loaded successfully
+2025-11-08 21:55:20.542 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:55:20.542 | CRITICAL | __main__:main:184 - Application failed to start: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:55:31.632 | SUCCESS  | core.face_detection:_load_model:54 - Face detection model loaded successfully
+2025-11-08 21:55:31.633 | ERROR    | core.camera_manager:load_config:79 - Error loading camera config: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:55:31.633 | CRITICAL | __main__:main:184 - Application failed to start: 'gbk' codec can't decode byte 0xac in position 69: illegal multibyte sequence
+2025-11-08 21:56:01.657 | SUCCESS  | core.face_detection:_load_model:54 - Face detection model loaded successfully
+2025-11-08 21:56:01.658 | INFO     | core.camera_manager:load_config:76 - Loaded 1 camera configurations
+2025-11-08 21:56:02.248 | SUCCESS  | core.database:_init_db:67 - Database initialized successfully
+2025-11-08 21:56:02.250 | INFO     | core.face_detection:load_known_faces:98 - Loaded 0 known faces
+2025-11-08 21:56:02.261 | INFO     | core.camera_manager:start_camera:123 - Started camera ID 0
+2025-11-08 21:56:02.263 | INFO     | __main__:main:173 - Application started successfully
+2025-11-08 21:56:02.826 | INFO     | core.camera_manager:_capture_frames:153 - Camera ID 0 opened successfully
+2025-11-08 21:56:18.161 | INFO     | core.camera_manager:_capture_frames:184 - Camera ID 0 capture thread exiting
+2025-11-08 21:56:18.162 | INFO     | core.camera_manager:start_camera:123 - Started camera ID 0
+2025-11-08 21:56:18.379 | INFO     | core.camera_manager:_capture_frames:153 - Camera ID 0 opened successfully
+2025-11-08 21:56:21.956 | INFO     | core.camera_manager:_capture_frames:184 - Camera ID 0 capture thread exiting
+2025-11-08 21:56:21.957 | INFO     | core.camera_manager:stop_camera:130 - Stopped camera ID 0
+2025-11-08 21:56:42.540 | INFO     | core.camera_manager:stop_all_cameras:96 - All camera threads stopped
+2025-11-08 21:56:42.568 | INFO     | core.camera_manager:stop_all_cameras:96 - All camera threads stopped
+2025-11-09 21:31:32.433 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 21:31:32.435 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 21:31:32.473 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 21:31:32.473 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 21:31:32.527 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 21:31:32.528 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 21:31:32.529 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 21:31:32.625 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 21:31:32.626 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 21:31:32.989 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 21:32:01.922 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 21:32:01.975 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 21:32:01.976 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 21:32:13.624 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 21:32:13.624 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 21:32:13.634 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 21:38:56.573 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 21:38:56.575 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 21:38:56.593 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 21:38:56.593 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 21:38:56.600 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 21:38:56.601 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 21:38:56.601 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 21:38:56.659 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 21:38:56.659 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 21:39:24.192 | WARNING  | core.camera_manager:_cleanup_camera_thread:42 - 摄像头 0 的线程未正常退出
+2025-11-09 21:39:24.193 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 21:39:40.298 | WARNING  | core.camera_manager:_cleanup_camera_thread:42 - 摄像头 0 的线程未正常退出
+2025-11-09 21:39:40.298 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 21:39:45.159 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 21:39:45.193 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 21:39:45.193 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 21:40:55.279 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 21:40:55.323 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:20:34.524 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:20:34.527 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:20:34.571 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:20:34.572 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:20:34.638 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:20:34.639 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:20:34.640 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:20:34.731 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:20:34.732 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:20:34.747 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:20:56.952 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:20:56.952 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-09 22:20:59.707 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:20:59.803 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:21:13.325 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:21:13.326 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:21:13.332 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:21:55.387 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:21:55.389 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:21:55.407 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:21:55.407 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:21:55.414 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:21:55.415 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:21:55.416 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:21:55.474 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:21:55.474 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:21:55.556 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:24:51.611 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:24:51.612 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:24:51.622 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:24:56.839 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:24:56.841 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:24:56.858 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:24:56.858 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:24:56.865 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:24:56.866 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:24:56.867 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:24:56.927 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:24:56.927 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:24:56.967 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:25:22.588 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 1 已停止
+2025-11-09 22:25:22.666 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:25:34.168 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:25:34.290 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:25:41.002 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:25:41.003 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-09 22:25:42.831 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:25:42.883 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:25:42.884 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:27:09.754 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:27:10.938 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:27:10.945 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:30:10.904 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:30:10.906 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:30:10.922 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:30:10.923 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:30:10.930 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:30:10.931 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:30:10.931 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:30:10.988 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:30:10.988 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:30:11.087 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:31:20.475 | INFO     | core.face_detection:add_known_face:206 - 新的人脸已添加: 1cbe71bebb78d33d2afb2b0fd5dabcea
+2025-11-09 22:31:21.214 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223121_cam0_1cbe71bebb78d33d2afb2b0fd5dabcea.jpg
+2025-11-09 22:31:28.664 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：1cbe71bebb78d33d2afb2b0fd5dabcea 在 Camera 0 被检测到，置信度 0.61
+2025-11-09 22:31:29.409 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223129_cam0_1cbe71bebb78d33d2afb2b0fd5dabcea.jpg
+2025-11-09 22:31:30.452 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：1cbe71bebb78d33d2afb2b0fd5dabcea 在 Camera 0 被检测到，置信度 0.60
+2025-11-09 22:31:31.249 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223131_cam0_1cbe71bebb78d33d2afb2b0fd5dabcea.jpg
+2025-11-09 22:31:32.450 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：1cbe71bebb78d33d2afb2b0fd5dabcea 在 Camera 0 被检测到，置信度 0.60
+2025-11-09 22:31:32.673 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223132_cam0_1cbe71bebb78d33d2afb2b0fd5dabcea.jpg
+2025-11-09 22:31:33.679 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：1cbe71bebb78d33d2afb2b0fd5dabcea 在 Camera 0 被检测到，置信度 0.61
+2025-11-09 22:31:33.823 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223133_cam0_1cbe71bebb78d33d2afb2b0fd5dabcea.jpg
+2025-11-09 22:31:34.878 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：1cbe71bebb78d33d2afb2b0fd5dabcea 在 Camera 0 被检测到，置信度 0.62
+2025-11-09 22:31:35.144 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223135_cam0_1cbe71bebb78d33d2afb2b0fd5dabcea.jpg
+2025-11-09 22:31:36.205 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：1cbe71bebb78d33d2afb2b0fd5dabcea 在 Camera 0 被检测到，置信度 0.61
+2025-11-09 22:31:36.394 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: 1cbe71bebb78d33d2afb2b0fd5dabcea_1762698680
+2025-11-09 22:31:36.394 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 22:31:36.595 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223136_cam0_1cbe71bebb78d33d2afb2b0fd5dabcea_1762698680.jpg
+2025-11-09 22:31:37.603 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：1cbe71bebb78d33d2afb2b0fd5dabcea_1762698680 在 Camera 0 被检测到，置信度 0.61
+2025-11-09 22:31:40.922 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:31:40.924 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-09 22:32:27.639 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏.jpg
+2025-11-09 22:32:27.640 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:32:30.972 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:32:34.759 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:32:43.692 | INFO     | core.face_detection:add_known_face:206 - 新的人脸已添加: 程嘉骏
+2025-11-09 22:32:52.147 | INFO     | core.face_detection:add_known_face:206 - 新的人脸已添加: 程嘉骏
+2025-11-09 22:33:00.803 | INFO     | core.face_detection:add_known_face:206 - 新的人脸已添加: 程嘉骏
+2025-11-09 22:34:47.128 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏.jpg
+2025-11-09 22:34:47.128 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏1.jpg
+2025-11-09 22:34:47.128 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:34:50.608 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:34:52.523 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:34:53.203 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏.jpg
+2025-11-09 22:34:53.203 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏1.jpg
+2025-11-09 22:34:53.204 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:34:54.347 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:34:54.357 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:35:46.697 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:35:46.699 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:35:46.715 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:35:46.715 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏.jpg
+2025-11-09 22:35:46.715 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏1.jpg
+2025-11-09 22:35:46.715 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:35:46.722 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:35:46.724 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:35:46.724 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:35:46.783 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:35:46.784 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:35:46.880 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:35:57.186 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:35:59.063 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:36:01.161 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:36:03.309 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏1.jpg
+2025-11-09 22:36:03.309 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:36:05.780 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:36:07.324 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:36:09.325 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:36:38.088 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:36:38.088 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:36:38.098 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:36:43.126 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:36:43.128 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:36:43.145 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:36:43.146 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏.jpg
+2025-11-09 22:36:43.146 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:36:43.158 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:36:43.159 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:36:43.159 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:36:43.216 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:36:43.216 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:36:43.300 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:36:56.404 | ERROR    | ui.face_manager:on_face_selected:137 - 加载人脸图像错误: 无法读取图像
+2025-11-09 22:37:06.796 | WARNING  | core.face_detection:load_known_faces:82 - 无法读取图片: data\known_faces\程嘉骏.jpg
+2025-11-09 22:37:06.796 | INFO     | core.face_detection:load_known_faces:103 - 共加载 0 张已知人脸
+2025-11-09 22:37:27.540 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:37:27.540 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:37:27.549 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:37:32.253 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:37:32.254 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:37:32.270 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:37:32.456 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 22:37:32.456 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 22:37:32.464 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:37:32.466 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:37:32.466 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:37:32.529 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:37:32.529 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:37:32.642 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:37:32.880 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223732_cam0_cjj.jpg
+2025-11-09 22:37:36.335 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.69
+2025-11-09 22:37:36.498 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223736_cam0_cjj.jpg
+2025-11-09 22:37:37.448 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-09 22:37:38.239 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223738_cam0_cjj.jpg
+2025-11-09 22:37:39.216 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-09 22:37:40.544 | INFO     | core.alert_system:_capture_screenshot:141 - 截图已保存: data\screenshots\20251109_223740_cam0_cjj.jpg
+2025-11-09 22:37:41.520 | INFO     | core.alert_system:trigger_alert:115 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-09 22:37:44.927 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:37:44.928 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-09 22:45:47.019 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:45:47.027 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:49:34.779 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:49:34.781 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:49:34.802 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:49:34.990 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 22:49:34.991 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 22:49:34.999 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:49:35.015 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:49:35.015 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:49:35.079 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:49:35.079 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:49:35.158 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:49:40.264 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:49:40.265 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:49:40.284 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:55:08.769 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:55:08.771 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:55:08.791 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:55:08.982 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 22:55:08.982 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 22:55:08.994 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:55:08.995 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:55:08.996 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:55:09.063 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:55:09.063 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:55:09.125 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:55:35.242 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 22:55:35.242 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 22:55:36.643 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_225536_cam0_cjj.jpg
+2025-11-09 22:55:40.513 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.68（已知人）
+2025-11-09 22:55:42.837 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:55:42.838 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:55:42.844 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:58:39.850 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:58:39.852 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:58:39.870 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:58:40.058 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 22:58:40.058 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 22:58:40.066 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:58:40.068 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:58:40.068 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:58:40.138 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:58:40.138 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:58:40.195 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:58:45.811 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:58:45.812 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:58:45.818 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:58:58.537 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 22:58:58.539 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 22:58:58.556 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 22:58:58.760 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 22:58:58.761 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 22:58:58.769 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 22:58:58.770 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 22:58:58.770 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 22:58:58.832 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 22:58:58.832 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 22:58:58.934 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 22:59:05.075 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_225905_cam0_cjj.jpg
+2025-11-09 22:59:08.924 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.74（已知人）
+2025-11-09 22:59:33.006 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 22:59:33.007 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 22:59:33.014 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 23:01:12.732 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 23:01:12.733 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 23:01:12.752 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 23:01:12.975 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 23:01:12.975 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 23:01:12.982 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 23:01:12.984 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 23:01:12.984 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 23:01:13.046 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 23:01:13.047 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 23:01:13.058 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 23:01:13.264 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230113_cam0_未知.jpg
+2025-11-09 23:01:13.264 | WARNING  | core.alert_system:_play_alert_sound:170 - 警报音文件不存在: assets/alert_unknown.wav
+2025-11-09 23:01:16.489 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.57（陌生人）
+2025-11-09 23:01:16.704 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230116_cam0_cjj.jpg
+2025-11-09 23:01:18.364 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.65（已知人）
+2025-11-09 23:01:18.549 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230118_cam0_未知.jpg
+2025-11-09 23:01:18.550 | WARNING  | core.alert_system:_play_alert_sound:170 - 警报音文件不存在: assets/alert_unknown.wav
+2025-11-09 23:01:19.577 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.54（陌生人）
+2025-11-09 23:01:19.768 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230119_cam0_未知.jpg
+2025-11-09 23:01:19.768 | WARNING  | core.alert_system:_play_alert_sound:170 - 警报音文件不存在: assets/alert_unknown.wav
+2025-11-09 23:01:20.799 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.47（陌生人）
+2025-11-09 23:01:21.027 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230121_cam0_未知.jpg
+2025-11-09 23:01:21.027 | WARNING  | core.alert_system:_play_alert_sound:170 - 警报音文件不存在: assets/alert_unknown.wav
+2025-11-09 23:01:22.065 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.47（陌生人）
+2025-11-09 23:01:22.349 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230122_cam0_未知.jpg
+2025-11-09 23:01:22.349 | WARNING  | core.alert_system:_play_alert_sound:170 - 警报音文件不存在: assets/alert_unknown.wav
+2025-11-09 23:01:23.371 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.53（陌生人）
+2025-11-09 23:01:23.426 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 23:01:23.427 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-09 23:02:23.535 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 23:02:23.545 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 23:02:37.908 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 23:02:37.909 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 23:02:37.926 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 23:02:38.096 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 23:02:38.096 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 23:02:38.104 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 23:02:38.107 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 23:02:38.107 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 23:02:38.167 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 23:02:38.168 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 23:02:38.224 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 23:02:38.406 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230238_cam0_未知.jpg
+2025-11-09 23:02:41.639 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.51（陌生人）
+2025-11-09 23:02:41.849 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230241_cam0_cjj.jpg
+2025-11-09 23:02:43.616 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.63（已知人）
+2025-11-09 23:02:43.787 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230243_cam0_未知.jpg
+2025-11-09 23:02:44.877 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.54（陌生人）
+2025-11-09 23:02:45.044 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230245_cam0_未知.jpg
+2025-11-09 23:02:46.096 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-09 23:02:46.299 | INFO     | core.alert_system:_capture_screenshot:197 - 截图已保存: data\screenshots\20251109_230246_cam0_未知.jpg
+2025-11-09 23:02:47.624 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.39（陌生人）
+2025-11-09 23:02:47.714 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 23:02:47.715 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-09 23:08:12.576 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 23:08:12.586 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 23:08:18.049 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 23:08:18.050 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 23:08:18.068 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 23:08:18.232 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 23:08:18.232 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 23:08:18.239 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 23:08:18.241 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 23:08:18.241 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 23:08:18.302 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 23:08:18.302 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 23:08:18.382 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 23:08:18.559 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230818_cam0_未知.jpg
+2025-11-09 23:08:21.683 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.57（陌生人）
+2025-11-09 23:08:21.980 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230821_cam0_未知.jpg
+2025-11-09 23:08:23.043 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.49（陌生人）
+2025-11-09 23:08:23.300 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230823_cam0_未知.jpg
+2025-11-09 23:08:24.365 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.49（陌生人）
+2025-11-09 23:08:24.602 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230824_cam0_未知.jpg
+2025-11-09 23:08:25.540 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-09 23:08:25.739 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230825_cam0_未知.jpg
+2025-11-09 23:08:26.870 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-09 23:08:27.042 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230827_cam0_未知.jpg
+2025-11-09 23:08:28.359 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.51（陌生人）
+2025-11-09 23:08:28.555 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230828_cam0_未知.jpg
+2025-11-09 23:08:29.612 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.47（陌生人）
+2025-11-09 23:08:29.803 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230829_cam0_未知.jpg
+2025-11-09 23:08:30.910 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.51（陌生人）
+2025-11-09 23:08:31.105 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230831_cam0_未知.jpg
+2025-11-09 23:08:32.276 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.49（陌生人）
+2025-11-09 23:08:32.527 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_230832_cam0_未知.jpg
+2025-11-09 23:08:33.644 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.54（陌生人）
+2025-11-09 23:08:33.658 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 23:08:33.658 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-09 23:15:14.082 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 23:15:14.091 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 23:15:19.631 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-09 23:15:19.633 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-09 23:15:19.655 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-09 23:15:19.843 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-09 23:15:19.843 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-09 23:15:19.851 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-09 23:15:19.852 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-09 23:15:19.852 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-09 23:15:19.909 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-09 23:15:19.910 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-09 23:15:19.973 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-09 23:15:20.200 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_231520_cam0_cjj.jpg
+2025-11-09 23:15:23.897 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.69（已知人）
+2025-11-09 23:15:24.134 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_231524_cam0_cjj.jpg
+2025-11-09 23:15:25.441 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.73（已知人）
+2025-11-09 23:15:25.637 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_231525_cam0_未知.jpg
+2025-11-09 23:15:26.652 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.51（陌生人）
+2025-11-09 23:15:26.898 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_231526_cam0_未知.jpg
+2025-11-09 23:15:27.978 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.54（陌生人）
+2025-11-09 23:15:28.167 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_231528_cam0_未知.jpg
+2025-11-09 23:15:29.155 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-09 23:15:29.357 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251109_231529_cam0_cjj.jpg
+2025-11-09 23:15:30.562 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.61（已知人）
+2025-11-09 23:15:30.640 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-09 23:15:30.641 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-09 23:15:30.655 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-10 03:09:04.708 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-10 03:09:04.710 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-10 03:09:04.757 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-10 03:09:05.039 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-10 03:09:05.039 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-10 03:09:05.094 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-10 03:09:05.111 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-10 03:09:05.112 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-10 03:09:05.168 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-10 03:09:05.169 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-10 03:09:16.512 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.104:8080/video
+2025-11-10 03:09:16.512 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-10 03:09:46.625 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-10 03:09:51.848 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-10 03:09:51.879 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-10 03:11:54.084 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-10 03:11:54.086 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-10 03:11:54.110 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-10 03:11:54.319 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-10 03:11:54.320 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-10 03:11:54.327 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-10 03:11:54.329 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-10 03:11:54.329 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-10 03:11:54.390 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-10 03:11:54.390 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-10 03:12:05.700 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.104:8080/video
+2025-11-10 03:12:05.701 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-10 03:13:11.749 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-10 03:13:11.757 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-10 03:13:17.980 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-10 03:13:17.981 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-10 03:13:18.005 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-10 03:13:18.195 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-10 03:13:18.195 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-10 03:13:18.203 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-10 03:13:18.204 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-10 03:13:18.204 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-10 03:13:18.257 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-10 03:13:18.265 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-10 03:13:18.266 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-10 03:13:18.522 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031318_cam0_未知.jpg
+2025-11-10 03:13:22.966 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.03（陌生人）
+2025-11-10 03:13:22.977 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031322_cam0_未知.jpg
+2025-11-10 03:13:24.477 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.42（陌生人）
+2025-11-10 03:13:24.741 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031324_cam0_未知.jpg
+2025-11-10 03:13:26.116 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.07（陌生人）
+2025-11-10 03:13:26.127 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031326_cam0_未知.jpg
+2025-11-10 03:13:27.420 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-10 03:13:27.689 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031327_cam0_未知.jpg
+2025-11-10 03:13:29.054 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.08（陌生人）
+2025-11-10 03:13:29.059 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031329_cam0_未知.jpg
+2025-11-10 03:13:30.927 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.56（陌生人）
+2025-11-10 03:13:31.192 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031331_cam0_未知.jpg
+2025-11-10 03:13:32.565 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.08（陌生人）
+2025-11-10 03:13:32.571 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031332_cam0_未知.jpg
+2025-11-10 03:13:33.660 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.56（陌生人）
+2025-11-10 03:13:33.888 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031333_cam0_未知.jpg
+2025-11-10 03:13:35.275 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.07（陌生人）
+2025-11-10 03:13:35.279 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031335_cam0_未知.jpg
+2025-11-10 03:13:36.569 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.58（陌生人）
+2025-11-10 03:13:36.849 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031336_cam0_未知.jpg
+2025-11-10 03:13:38.146 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.09（陌生人）
+2025-11-10 03:13:38.152 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031338_cam0_未知.jpg
+2025-11-10 03:13:39.519 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.59（陌生人）
+2025-11-10 03:13:39.829 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031339_cam0_未知.jpg
+2025-11-10 03:13:41.132 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.12（陌生人）
+2025-11-10 03:13:41.142 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031341_cam0_未知.jpg
+2025-11-10 03:13:42.465 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.56（陌生人）
+2025-11-10 03:13:42.522 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-10 03:13:42.522 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-10 03:14:25.462 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-10 03:14:25.462 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-10 03:15:41.715 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-10 03:15:41.715 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-10 03:15:55.310 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-10 03:15:55.310 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-10 03:15:59.751 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-10 03:15:59.782 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-10 03:16:00.037 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031600_cam0_未知.jpg
+2025-11-10 03:16:01.736 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.03（陌生人）
+2025-11-10 03:16:01.741 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031601_cam0_未知.jpg
+2025-11-10 03:16:02.738 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.49（陌生人）
+2025-11-10 03:16:03.015 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031603_cam0_未知.jpg
+2025-11-10 03:16:03.985 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.12（陌生人）
+2025-11-10 03:16:03.990 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031603_cam0_未知.jpg
+2025-11-10 03:16:04.895 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.58（陌生人）
+2025-11-10 03:16:05.175 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031605_cam0_未知.jpg
+2025-11-10 03:16:06.073 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.07（陌生人）
+2025-11-10 03:16:06.081 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031606_cam0_未知.jpg
+2025-11-10 03:16:06.979 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.54（陌生人）
+2025-11-10 03:16:07.264 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031607_cam0_未知.jpg
+2025-11-10 03:16:08.175 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.04（陌生人）
+2025-11-10 03:16:08.182 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031608_cam0_未知.jpg
+2025-11-10 03:16:09.236 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.51（陌生人）
+2025-11-10 03:16:09.525 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031609_cam0_未知.jpg
+2025-11-10 03:16:10.428 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.09（陌生人）
+2025-11-10 03:16:10.438 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031610_cam0_未知.jpg
+2025-11-10 03:16:11.350 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.55（陌生人）
+2025-11-10 03:16:11.614 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031611_cam0_未知.jpg
+2025-11-10 03:16:12.607 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.00（陌生人）
+2025-11-10 03:16:12.617 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031612_cam0_cjj.jpg
+2025-11-10 03:16:14.043 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.66（已知人）
+2025-11-10 03:16:14.361 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031614_cam0_未知.jpg
+2025-11-10 03:16:15.348 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.09（陌生人）
+2025-11-10 03:16:15.355 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031615_cam0_cjj.jpg
+2025-11-10 03:16:16.612 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.68（已知人）
+2025-11-10 03:16:16.953 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031616_cam0_未知.jpg
+2025-11-10 03:16:17.865 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.06（陌生人）
+2025-11-10 03:16:17.870 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031617_cam0_未知.jpg
+2025-11-10 03:16:18.802 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.58（陌生人）
+2025-11-10 03:16:19.143 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031619_cam0_未知.jpg
+2025-11-10 03:16:20.068 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.07（陌生人）
+2025-11-10 03:16:20.076 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031620_cam0_未知.jpg
+2025-11-10 03:16:20.972 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.45（陌生人）
+2025-11-10 03:16:20.979 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031620_cam0_未知.jpg
+2025-11-10 03:16:21.882 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.02（陌生人）
+2025-11-10 03:16:22.193 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031622_cam0_未知.jpg
+2025-11-10 03:16:23.088 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.08（陌生人）
+2025-11-10 03:16:23.094 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251110_031623_cam0_未知.jpg
+2025-11-10 03:16:23.995 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.44（陌生人）
+2025-11-10 03:16:24.017 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-10 03:16:24.018 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-10 03:21:00.738 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-10 03:21:00.738 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-10 03:21:38.739 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-10 03:21:38.749 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 17:51:45.914 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 17:51:45.917 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 17:51:45.961 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 17:51:46.197 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 17:51:46.197 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 17:51:46.291 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 17:51:46.340 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 17:51:46.342 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 17:51:46.400 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 17:51:46.401 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 17:51:58.687 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 17:51:58.699 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 17:59:14.575 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 17:59:14.576 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 17:59:14.594 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 17:59:14.783 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 17:59:14.783 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 17:59:14.792 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 17:59:14.793 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 17:59:14.793 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 17:59:14.850 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 17:59:14.851 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 17:59:15.172 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 17:59:15.378 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175915_cam0_未知.jpg
+2025-11-11 17:59:18.834 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.44（陌生人）
+2025-11-11 17:59:19.030 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175919_cam0_未知.jpg
+2025-11-11 17:59:20.387 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.46（陌生人）
+2025-11-11 17:59:20.572 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175920_cam0_未知.jpg
+2025-11-11 17:59:21.902 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.46（陌生人）
+2025-11-11 17:59:22.064 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175922_cam0_未知.jpg
+2025-11-11 17:59:23.385 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-11 17:59:23.619 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175923_cam0_未知.jpg
+2025-11-11 17:59:25.612 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.49（陌生人）
+2025-11-11 17:59:25.739 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175925_cam0_未知.jpg
+2025-11-11 17:59:26.983 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.51（陌生人）
+2025-11-11 17:59:27.156 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175927_cam0_cjj.jpg
+2025-11-11 17:59:28.830 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.71（已知人）
+2025-11-11 17:59:28.999 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175928_cam0_cjj.jpg
+2025-11-11 17:59:30.134 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.68（已知人）
+2025-11-11 17:59:30.321 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175930_cam0_cjj.jpg
+2025-11-11 17:59:31.450 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.68（已知人）
+2025-11-11 17:59:31.677 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175931_cam0_cjj.jpg
+2025-11-11 17:59:32.762 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.68（已知人）
+2025-11-11 17:59:32.939 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175932_cam0_未知.jpg
+2025-11-11 17:59:33.888 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.49（陌生人）
+2025-11-11 17:59:34.081 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175934_cam0_未知.jpg
+2025-11-11 17:59:35.029 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-11 17:59:35.213 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175935_cam0_未知.jpg
+2025-11-11 17:59:36.219 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.54（陌生人）
+2025-11-11 17:59:36.436 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175936_cam0_cjj.jpg
+2025-11-11 17:59:37.515 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.60（已知人）
+2025-11-11 17:59:37.722 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175937_cam0_cjj.jpg
+2025-11-11 17:59:38.915 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.59（已知人）
+2025-11-11 17:59:38.939 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 17:59:38.940 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-11 17:59:55.527 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 17:59:55.564 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 17:59:55.735 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175955_cam0_未知.jpg
+2025-11-11 17:59:57.445 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-11 17:59:57.656 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175957_cam0_未知.jpg
+2025-11-11 17:59:58.608 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.55（陌生人）
+2025-11-11 17:59:58.836 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175958_cam0_未知.jpg
+2025-11-11 17:59:59.804 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.48（陌生人）
+2025-11-11 17:59:59.993 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_175959_cam0_未知.jpg
+2025-11-11 18:00:00.885 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.70（陌生人）
+2025-11-11 18:00:01.086 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180001_cam0_未知.jpg
+2025-11-11 18:00:02.063 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.67（陌生人）
+2025-11-11 18:00:02.302 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180002_cam0_未知.jpg
+2025-11-11 18:00:03.280 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.67（陌生人）
+2025-11-11 18:00:03.503 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180003_cam0_未知.jpg
+2025-11-11 18:00:04.396 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.65（陌生人）
+2025-11-11 18:00:04.596 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180004_cam0_未知.jpg
+2025-11-11 18:00:05.530 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-11 18:00:05.773 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180005_cam0_未知.jpg
+2025-11-11 18:00:06.740 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.57（陌生人）
+2025-11-11 18:00:06.923 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180006_cam0_未知.jpg
+2025-11-11 18:00:07.900 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.58（陌生人）
+2025-11-11 18:00:07.932 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 18:00:07.933 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-11 18:00:44.464 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 18:00:44.499 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 18:00:44.682 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180044_cam0_cjj.jpg
+2025-11-11 18:00:46.903 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.71（已知人）
+2025-11-11 18:00:47.092 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180047_cam0_cjj.jpg
+2025-11-11 18:00:48.114 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.69（已知人）
+2025-11-11 18:00:48.276 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180048_cam0_cjj.jpg
+2025-11-11 18:00:49.279 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.68（已知人）
+2025-11-11 18:00:49.474 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180049_cam0_cjj.jpg
+2025-11-11 18:00:50.459 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.64（已知人）
+2025-11-11 18:00:50.619 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180050_cam0_cjj.jpg
+2025-11-11 18:00:51.611 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.62（已知人）
+2025-11-11 18:00:51.784 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180051_cam0_cjj.jpg
+2025-11-11 18:00:52.774 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.62（已知人）
+2025-11-11 18:00:52.973 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180052_cam0_未知.jpg
+2025-11-11 18:00:53.881 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.59（陌生人）
+2025-11-11 18:00:54.105 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180054_cam0_cjj.jpg
+2025-11-11 18:00:55.080 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.61（已知人）
+2025-11-11 18:00:55.290 | INFO     | core.alert_system:_capture_screenshot:208 - 截图已保存: data\screenshots\20251111_180055_cam0_cjj.jpg
+2025-11-11 18:00:56.289 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.61（已知人）
+2025-11-11 18:00:56.333 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 18:00:56.334 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-11 18:06:45.698 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:06:45.707 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:06:52.882 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 18:06:52.884 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 18:06:52.903 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 18:06:53.071 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 18:06:53.071 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 18:06:53.079 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 18:06:53.080 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 18:06:53.081 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 18:06:53.112 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 18:06:53.143 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:06:53.143 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 18:06:53.295 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180653_cam0_cjj.jpg
+2025-11-11 18:06:56.754 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.70（已知人）
+2025-11-11 18:06:56.936 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180656_cam0_unknown.jpg
+2025-11-11 18:06:57.899 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.53（陌生人）
+2025-11-11 18:06:58.068 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180658_cam0_unknown.jpg
+2025-11-11 18:06:59.072 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.55（陌生人）
+2025-11-11 18:06:59.314 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180659_cam0_unknown.jpg
+2025-11-11 18:07:00.245 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.50（陌生人）
+2025-11-11 18:07:00.432 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180700_cam0_unknown.jpg
+2025-11-11 18:07:01.401 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.50（陌生人）
+2025-11-11 18:07:01.645 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180701_cam0_cjj.jpg
+2025-11-11 18:07:02.567 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.62（已知人）
+2025-11-11 18:07:02.713 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180702_cam0_unknown.jpg
+2025-11-11 18:07:03.804 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.60（陌生人）
+2025-11-11 18:07:04.000 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180703_cam0_cjj.jpg
+2025-11-11 18:07:05.069 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.65（已知人）
+2025-11-11 18:07:05.079 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 18:07:05.080 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:07:05.091 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:09:00.449 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 18:09:00.450 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 18:09:00.467 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 18:09:00.696 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 18:09:00.696 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 18:09:00.705 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 18:09:00.706 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 18:09:00.706 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 18:09:00.731 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 18:09:00.769 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:09:00.769 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 18:09:00.940 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180900_cam0_unknown.jpg
+2025-11-11 18:09:04.305 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.49（陌生人）
+2025-11-11 18:09:04.514 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180904_cam0_unknown.jpg
+2025-11-11 18:09:05.481 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.50（陌生人）
+2025-11-11 18:09:05.725 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180905_cam0_unknown.jpg
+2025-11-11 18:09:06.640 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.51（陌生人）
+2025-11-11 18:09:06.863 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180906_cam0_unknown.jpg
+2025-11-11 18:09:07.852 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.51（陌生人）
+2025-11-11 18:09:08.061 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180908_cam0_unknown.jpg
+2025-11-11 18:09:08.973 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.42（陌生人）
+2025-11-11 18:09:09.206 | INFO     | core.alert_system:_capture_screenshot:224 - 截图已保存: data\screenshots\20251111_180909_cam0_unknown.jpg
+2025-11-11 18:09:10.198 | INFO     | core.alert_system:trigger_alert:147 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.51（陌生人）
+2025-11-11 18:09:10.235 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 18:09:10.235 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:09:10.250 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:15:52.602 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 18:15:52.604 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 18:15:52.619 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 18:15:52.815 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 18:15:52.815 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 18:15:52.824 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 18:15:52.825 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 18:15:52.825 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 18:15:52.849 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 18:15:52.887 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:15:52.887 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 18:15:53.033 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_181553_cam0_unknown.jpg
+2025-11-11 18:15:56.383 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.50（陌生人）
+2025-11-11 18:15:56.648 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_181556_cam0_cjj.jpg
+2025-11-11 18:15:57.582 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.61（已知人）
+2025-11-11 18:15:58.616 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:16:00.624 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 18:16:02.659 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:16:04.635 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 18:16:06.820 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_181606_cam0_cjj.jpg
+2025-11-11 18:16:08.903 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.65（已知人）
+2025-11-11 18:16:09.075 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:16:11.160 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:16:13.142 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_181613_cam0_unknown.jpg
+2025-11-11 18:16:14.221 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.58（陌生人）
+2025-11-11 18:16:15.122 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.67
+2025-11-11 18:16:17.144 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_181617_cam0_cjj.jpg
+2025-11-11 18:16:18.089 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.67（已知人）
+2025-11-11 18:16:19.226 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:16:21.208 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 18:16:23.276 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_181623_cam0_unknown.jpg
+2025-11-11 18:16:25.407 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.55（陌生人）
+2025-11-11 18:16:25.613 | INFO     | core.alert_system:trigger_alert:118 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:16:26.854 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 18:16:26.854 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-11 18:19:03.369 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:19:03.374 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:23:41.571 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 18:23:41.573 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 18:23:41.593 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 18:23:41.767 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 18:23:41.767 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 18:23:41.781 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 18:23:41.783 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 18:23:41.783 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 18:23:41.812 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 18:23:41.841 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:23:41.841 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 18:23:42.046 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182342_cam0_unknown.jpg
+2025-11-11 18:23:45.694 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.57（陌生人）
+2025-11-11 18:23:45.929 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182345_cam0_cjj.jpg
+2025-11-11 18:23:46.961 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.70（已知人）
+2025-11-11 18:23:47.903 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.74
+2025-11-11 18:23:49.962 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:23:51.997 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.67
+2025-11-11 18:23:54.003 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 18:23:56.046 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182356_cam0_cjj.jpg
+2025-11-11 18:23:58.380 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.66（已知人）
+2025-11-11 18:23:58.550 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:00.609 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:02.645 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 18:24:04.643 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:05.594 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:05.854 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:06.173 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182406_cam0_cjj.jpg
+2025-11-11 18:24:08.336 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.65（已知人）
+2025-11-11 18:24:08.529 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:08.781 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 18:24:08.999 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:09.246 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:09.447 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:09.653 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:09.942 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182409_cam0_unknown.jpg
+2025-11-11 18:24:11.032 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.60（陌生人）
+2025-11-11 18:24:11.254 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:11.440 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 18:24:11.693 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:11.887 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:24:12.110 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.69
+2025-11-11 18:24:12.374 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:24:12.581 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:24:12.825 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:24:13.051 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:13.241 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:24:13.513 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:24:13.667 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.68
+2025-11-11 18:24:13.959 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.69
+2025-11-11 18:24:14.195 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:24:14.197 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.02
+2025-11-11 18:24:14.434 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.68
+2025-11-11 18:24:14.610 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:24:14.854 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.69
+2025-11-11 18:24:15.056 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:24:15.303 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.69
+2025-11-11 18:24:15.518 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.69
+2025-11-11 18:24:15.762 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:24:15.997 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:16.190 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182416_cam0_cjj.jpg
+2025-11-11 18:24:18.373 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.66（已知人）
+2025-11-11 18:24:18.644 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 18:24:18.835 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:19.064 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:19.301 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 18:24:19.499 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:19.728 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:20.028 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182420_cam0_unknown.jpg
+2025-11-11 18:24:21.129 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.60（陌生人）
+2025-11-11 18:24:21.333 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:24:21.577 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:21.751 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:21.980 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:22.263 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:22.423 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:22.711 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:22.905 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:23.127 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:23.461 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:24:23.631 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:23.840 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:24:24.093 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:24.286 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:24.548 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.74
+2025-11-11 18:24:24.769 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:24.968 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:25.202 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:25.462 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:24:25.829 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:24:25.982 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:26.266 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182426_cam0_cjj.jpg
+2025-11-11 18:24:28.441 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.62（已知人）
+2025-11-11 18:24:28.648 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:28.814 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:29.126 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 18:24:29.342 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 18:24:29.539 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:29.758 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:30.062 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:30.228 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.67
+2025-11-11 18:24:30.509 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:30.698 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:30.950 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:31.187 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:31.445 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:31.698 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:31.879 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:32.127 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:32.338 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 18:24:32.545 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182432_cam0_unknown.jpg
+2025-11-11 18:24:33.665 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.56（陌生人）
+2025-11-11 18:24:33.867 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 18:24:34.128 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 18:24:34.303 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:24:34.577 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 18:24:34.755 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 18:24:35.036 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 18:24:35.232 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:24:35.450 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.68
+2025-11-11 18:24:35.648 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:35.862 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:36.098 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:24:36.331 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182436_cam0_cjj.jpg
+2025-11-11 18:24:37.621 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.71（已知人）
+2025-11-11 18:24:37.853 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 18:24:38.024 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 18:24:38.274 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:38.483 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:38.744 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:38.948 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:39.206 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 18:24:39.370 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:39.621 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:39.839 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 18:24:40.045 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:40.286 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:40.503 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:40.842 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 18:24:41.106 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:41.283 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:41.530 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:41.713 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 18:24:41.911 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 18:24:42.124 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 18:24:42.321 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:42.483 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:42.652 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182442_cam0_unknown.jpg
+2025-11-11 18:24:45.084 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.56（陌生人）
+2025-11-11 18:24:45.283 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:45.494 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:45.723 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:45.935 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.68
+2025-11-11 18:24:46.157 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:24:46.375 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182446_cam0_cjj.jpg
+2025-11-11 18:24:47.612 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.68（已知人）
+2025-11-11 18:24:47.824 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:24:48.015 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:48.229 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 18:24:48.431 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:48.610 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:48.796 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:48.976 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:49.157 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:49.351 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 18:24:49.537 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:49.713 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.67
+2025-11-11 18:24:49.886 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 18:24:50.032 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 18:24:50.301 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:24:50.468 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:24:50.698 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:50.870 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:51.058 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.74
+2025-11-11 18:24:51.290 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.74
+2025-11-11 18:24:51.467 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:51.706 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:51.879 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.74
+2025-11-11 18:24:52.089 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:24:52.257 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:24:52.437 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:52.607 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:24:52.778 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 18:24:52.958 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182452_cam0_unknown.jpg
+2025-11-11 18:24:55.476 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.60（陌生人）
+2025-11-11 18:24:55.767 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:24:55.942 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:24:56.118 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:24:56.341 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 18:24:56.604 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 18:24:56.817 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:24:56.996 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 18:24:57.198 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:24:57.398 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:24:57.564 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:24:57.740 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 18:24:57.925 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 18:24:58.070 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_182458_cam0_cjj.jpg
+2025-11-11 18:24:59.369 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.61（已知人）
+2025-11-11 18:24:59.418 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 18:24:59.419 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-11 18:25:51.062 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 18:25:51.062 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 18:44:53.874 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:44:53.882 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:44:59.511 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 18:44:59.513 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 18:44:59.531 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 18:44:59.694 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 18:44:59.694 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 18:44:59.702 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 18:44:59.704 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 18:44:59.704 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 18:44:59.727 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 18:44:59.769 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:44:59.769 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 18:44:59.928 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_184459_cam0_unknown.jpg
+2025-11-11 18:45:03.550 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.60（陌生人）
+2025-11-11 18:45:03.732 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 18:45:05.783 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.46
+2025-11-11 18:45:07.837 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_184507_cam0_cjj.jpg
+2025-11-11 18:45:09.086 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.67（已知人）
+2025-11-11 18:45:09.784 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 18:45:11.797 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_184511_cam0_unknown.jpg
+2025-11-11 18:45:12.933 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.58（陌生人）
+2025-11-11 18:45:13.779 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:15.592 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:15.843 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 18:45:16.059 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.46
+2025-11-11 18:45:16.310 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 18:45:16.517 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 18:45:16.727 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:45:16.950 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.47
+2025-11-11 18:45:17.125 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:45:17.342 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:17.520 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:17.726 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 18:45:17.899 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:45:18.104 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 18:45:18.312 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:45:18.497 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:18.679 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:18.831 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:18.979 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:19.158 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:19.358 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:19.573 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 18:45:19.756 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:19.909 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:20.078 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:20.257 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:20.425 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:45:20.625 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:20.802 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:45:20.987 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.45
+2025-11-11 18:45:21.124 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.45
+2025-11-11 18:45:21.285 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 18:45:21.464 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:45:21.649 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_184521_cam0_cjj.jpg
+2025-11-11 18:45:24.248 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.65（已知人）
+2025-11-11 18:45:24.432 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:45:24.633 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:45:24.795 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 18:45:24.973 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.68
+2025-11-11 18:45:25.142 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:45:25.331 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:45:25.516 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:45:25.732 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:45:25.969 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:45:26.128 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 18:45:26.287 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:45:26.457 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 18:45:26.667 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:45:26.837 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 18:45:27.055 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_184527_cam0_unknown.jpg
+2025-11-11 18:45:28.355 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.57（陌生人）
+2025-11-11 18:45:28.722 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:45:29.015 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:45:29.236 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:45:29.447 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 18:45:29.624 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:45:29.827 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 18:45:30.013 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:45:30.174 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:30.355 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:30.536 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:45:30.729 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.42
+2025-11-11 18:45:30.900 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.30
+2025-11-11 18:45:31.124 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.29
+2025-11-11 18:45:31.278 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.37
+2025-11-11 18:45:31.442 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.42
+2025-11-11 18:45:31.623 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.43
+2025-11-11 18:45:31.786 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.46
+2025-11-11 18:45:31.962 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.47
+2025-11-11 18:45:32.168 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 18:45:32.333 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 18:45:32.519 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 18:45:32.703 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 18:45:32.903 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 18:45:33.110 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 18:45:33.329 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:33.543 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:33.700 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 18:45:33.876 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:45:34.050 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:45:34.250 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 18:45:34.418 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:45:34.652 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:34.865 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:35.053 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:35.235 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:45:35.398 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:35.626 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:45:35.795 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:35.994 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:36.195 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:36.362 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:36.542 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:36.786 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:36.961 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:45:37.130 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_184537_cam0_unknown.jpg
+2025-11-11 18:45:39.502 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.54（陌生人）
+2025-11-11 18:45:39.712 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:45:39.916 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:45:40.112 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:45:40.305 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:40.509 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 18:45:40.665 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 18:45:40.906 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:41.088 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 18:45:41.265 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:45:41.481 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:41.702 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 18:45:41.869 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 18:45:42.088 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:45:42.283 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:42.487 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:42.668 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:42.877 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:45:43.072 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:43.303 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 18:45:43.514 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:45:43.842 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 18:45:43.978 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:44.192 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:45:44.200 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 18:45:44.201 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-11 18:46:24.902 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:46:24.913 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:56:26.077 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 18:56:26.079 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 18:56:26.099 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 18:56:26.264 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 18:56:26.264 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 18:56:26.273 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 18:56:26.275 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 18:56:26.275 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 18:56:26.326 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 18:56:26.333 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:56:26.334 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 18:56:26.511 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_185626_cam0_cjj.jpg
+2025-11-11 18:56:30.705 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.61（已知人）
+2025-11-11 18:56:30.890 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_185630_cam0_unknown.jpg
+2025-11-11 18:56:30.890 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.54（陌生人）
+2025-11-11 18:56:32.926 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:56:34.939 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 18:56:36.991 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:56:37.347 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 18:56:37.348 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-11 18:56:58.156 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:56:58.167 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 18:59:40.802 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 18:59:40.803 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 18:59:40.820 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 18:59:40.972 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 18:59:40.972 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 18:59:40.983 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 18:59:40.984 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 18:59:40.984 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 18:59:41.042 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 18:59:41.043 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 18:59:41.183 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 18:59:41.403 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_185941_cam0_unknown.jpg
+2025-11-11 18:59:45.447 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.55（陌生人）
+2025-11-11 18:59:45.633 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 18:59:47.689 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 18:59:49.683 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 18:59:51.703 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_185951_cam0_cjj.jpg
+2025-11-11 18:59:51.704 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.63（已知人）
+2025-11-11 18:59:53.703 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 18:59:55.759 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_185955_cam0_unknown.jpg
+2025-11-11 18:59:55.759 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.52（陌生人）
+2025-11-11 18:59:57.807 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 18:59:59.800 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:00:01.001 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:01.229 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 19:00:01.433 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:01.603 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:01.824 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:02.018 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:00:02.200 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:02.374 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:02.581 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:02.787 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:02.958 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:03.156 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:03.340 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:03.503 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:03.662 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:03.857 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:04.020 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:04.190 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:04.362 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:04.545 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:04.719 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:04.900 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:05.125 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:05.282 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:00:05.463 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:05.657 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:00:05.852 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190005_cam0_unknown.jpg
+2025-11-11 19:00:05.853 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.53（陌生人）
+2025-11-11 19:00:06.073 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:06.301 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:06.530 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:06.686 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.47
+2025-11-11 19:00:06.866 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.35
+2025-11-11 19:00:07.073 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190007_cam0_cjj.jpg
+2025-11-11 19:00:07.074 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.65（已知人）
+2025-11-11 19:00:07.270 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.67
+2025-11-11 19:00:07.475 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.69
+2025-11-11 19:00:07.630 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.67
+2025-11-11 19:00:07.769 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.74
+2025-11-11 19:00:07.930 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 19:00:08.121 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.75
+2025-11-11 19:00:08.308 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.75
+2025-11-11 19:00:08.467 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.78
+2025-11-11 19:00:08.620 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.77
+2025-11-11 19:00:08.858 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.77
+2025-11-11 19:00:09.062 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.77
+2025-11-11 19:00:09.220 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 19:00:09.402 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.40
+2025-11-11 19:00:09.624 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:09.809 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:10.086 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 19:00:10.315 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:10.471 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:10.707 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:10.934 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 19:00:11.118 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:11.312 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 19:00:11.554 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:11.797 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:11.962 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.43
+2025-11-11 19:00:12.144 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:12.363 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:12.577 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:12.821 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:12.990 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:13.184 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:13.380 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:13.575 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:13.834 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:14.050 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 19:00:14.051 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 19:00:14.233 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:14.423 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:14.606 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:14.812 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:14.989 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:15.236 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:15.452 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:15.610 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:15.832 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:16.013 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190016_cam0_unknown.jpg
+2025-11-11 19:00:18.394 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.49（陌生人）
+2025-11-11 19:00:18.597 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:18.807 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:19.022 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 19:00:19.208 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:19.408 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 19:00:19.584 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 19:00:19.755 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 19:00:19.956 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:20.127 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:20.302 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:20.524 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 19:00:20.741 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:20.939 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:21.151 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:21.356 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:21.546 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:21.781 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:21.963 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:22.198 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:22.404 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:22.571 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:22.771 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:22.954 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:23.148 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:23.431 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:23.623 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:23.812 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:23.975 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:24.176 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:24.363 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:24.587 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:24.790 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:25.202 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:25.431 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:25.621 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190025_cam0_cjj.jpg
+2025-11-11 19:00:25.621 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.60（已知人）
+2025-11-11 19:00:25.780 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:00:25.959 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:26.180 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190026_cam0_unknown.jpg
+2025-11-11 19:00:26.181 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.55（陌生人）
+2025-11-11 19:00:26.408 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 19:00:26.599 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 19:00:26.809 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 19:00:26.981 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:27.183 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:27.341 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:00:27.581 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:27.784 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:27.936 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:00:28.137 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:28.337 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:28.473 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:28.626 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:00:28.778 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:28.975 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:29.137 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.45
+2025-11-11 19:00:29.306 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:29.534 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:29.692 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:29.886 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:30.061 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.43
+2025-11-11 19:00:30.269 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:30.466 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:30.674 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:30.872 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:31.064 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 19:00:31.293 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 19:00:31.505 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 19:00:31.697 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:31.878 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:32.051 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:32.261 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.53
+2025-11-11 19:00:32.466 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.47
+2025-11-11 19:00:32.795 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:33.047 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.42
+2025-11-11 19:00:33.244 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.38
+2025-11-11 19:00:33.433 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.44
+2025-11-11 19:00:33.604 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.45
+2025-11-11 19:00:33.755 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:33.908 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:34.088 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:00:34.301 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:34.466 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.46
+2025-11-11 19:00:34.616 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:00:34.781 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:00:34.940 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:35.105 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.45
+2025-11-11 19:00:35.251 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.43
+2025-11-11 19:00:35.411 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.45
+2025-11-11 19:00:35.578 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.40
+2025-11-11 19:00:35.746 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.46
+2025-11-11 19:00:35.908 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.46
+2025-11-11 19:00:36.082 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.46
+2025-11-11 19:00:36.319 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190036_cam0_unknown.jpg
+2025-11-11 19:00:36.320 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.48（陌生人）
+2025-11-11 19:00:36.503 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:00:36.674 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.41
+2025-11-11 19:00:36.857 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.33
+2025-11-11 19:00:37.045 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.33
+2025-11-11 19:00:37.221 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.29
+2025-11-11 19:00:37.387 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.29
+2025-11-11 19:00:37.580 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.28
+2025-11-11 19:00:37.766 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.36
+2025-11-11 19:00:37.954 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.33
+2025-11-11 19:00:38.152 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.35
+2025-11-11 19:00:38.355 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.37
+2025-11-11 19:00:38.547 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.32
+2025-11-11 19:00:38.757 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.38
+2025-11-11 19:00:38.914 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.42
+2025-11-11 19:00:39.078 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.44
+2025-11-11 19:00:39.220 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.47
+2025-11-11 19:00:39.435 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.45
+2025-11-11 19:00:39.670 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.46
+2025-11-11 19:00:39.864 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.48
+2025-11-11 19:00:40.069 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.47
+2025-11-11 19:00:40.324 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:00:40.389 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 19:00:40.389 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 19:00:40.397 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 19:07:10.805 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-11 19:07:10.807 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-11 19:07:10.824 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-11 19:07:10.988 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-11 19:07:10.988 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-11 19:07:10.997 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 19:07:10.998 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-11 19:07:10.998 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-11 19:07:11.056 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-11 19:07:11.056 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-11 19:07:11.120 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 19:07:11.350 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190711_cam0_cjj.jpg
+2025-11-11 19:07:15.851 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.66（已知人）
+2025-11-11 19:07:16.099 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.77
+2025-11-11 19:07:18.086 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190718_cam0_unknown.jpg
+2025-11-11 19:07:18.087 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.55（陌生人）
+2025-11-11 19:07:20.073 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 19:07:22.065 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 19:07:24.150 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190724_cam0_cjj.jpg
+2025-11-11 19:07:24.150 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.63（已知人）
+2025-11-11 19:07:26.204 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 19:07:28.218 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.63
+2025-11-11 19:07:30.236 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190730_cam0_unknown.jpg
+2025-11-11 19:07:30.237 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.59（陌生人）
+2025-11-11 19:07:31.506 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 19:07:31.507 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-11 19:07:38.104 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-11 19:07:38.222 | INFO     | core.camera_manager:_capture_frames:150 - 摄像头 0 打开成功
+2025-11-11 19:07:38.397 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 19:07:38.583 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 19:07:38.769 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 19:07:38.975 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:07:39.187 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 19:07:39.396 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:07:39.593 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 19:07:39.746 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190739_cam0_cjj.jpg
+2025-11-11 19:07:39.746 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：cjj 在 Camera 0 被检测到，置信度 0.63（已知人）
+2025-11-11 19:07:40.079 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.59
+2025-11-11 19:07:40.276 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190740_cam0_unknown.jpg
+2025-11-11 19:07:40.277 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.56（陌生人）
+2025-11-11 19:07:40.494 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.67
+2025-11-11 19:07:40.674 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 19:07:40.851 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.68
+2025-11-11 19:07:41.038 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.70
+2025-11-11 19:07:41.271 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 19:07:41.440 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 19:07:41.637 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.72
+2025-11-11 19:07:41.805 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 19:07:41.977 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 19:07:42.176 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 19:07:42.393 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 19:07:42.586 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 19:07:42.782 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 19:07:42.996 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 19:07:43.237 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 19:07:43.462 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.60
+2025-11-11 19:07:43.664 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 19:07:43.835 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 19:07:44.057 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 19:07:44.229 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.76
+2025-11-11 19:07:44.416 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.71
+2025-11-11 19:07:44.601 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.74
+2025-11-11 19:07:44.778 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.76
+2025-11-11 19:07:44.957 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.77
+2025-11-11 19:07:45.137 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.76
+2025-11-11 19:07:45.363 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.74
+2025-11-11 19:07:45.527 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 19:07:45.692 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 19:07:45.924 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.73
+2025-11-11 19:07:46.142 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.75
+2025-11-11 19:07:46.339 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.66
+2025-11-11 19:07:46.511 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.61
+2025-11-11 19:07:46.716 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.62
+2025-11-11 19:07:46.886 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.65
+2025-11-11 19:07:47.103 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：cjj 在 Camera 0 被检测到，置信度 0.64
+2025-11-11 19:07:47.265 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:07:47.426 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.57
+2025-11-11 19:07:47.597 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.58
+2025-11-11 19:07:47.838 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.56
+2025-11-11 19:07:47.974 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.55
+2025-11-11 19:07:48.169 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:07:48.403 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:07:48.591 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.54
+2025-11-11 19:07:48.770 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:07:48.942 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.51
+2025-11-11 19:07:49.176 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.52
+2025-11-11 19:07:49.354 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.47
+2025-11-11 19:07:49.546 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.49
+2025-11-11 19:07:49.752 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.50
+2025-11-11 19:07:49.978 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.27
+2025-11-11 19:07:50.196 | INFO     | core.alert_system:trigger_alert:119 - 警报冷却中（10s）：未知 在 Camera 0 被检测到，置信度 0.09
+2025-11-11 19:07:53.302 | INFO     | core.alert_system:_capture_screenshot:256 - 截图已保存: data\screenshots\20251111_190753_cam0_unknown.jpg
+2025-11-11 19:07:55.908 | INFO     | core.alert_system:trigger_alert:181 - 警报触发：未知 在 Camera 0 被检测到，置信度 0.36（陌生人）
+2025-11-11 19:07:55.957 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-11 19:07:55.957 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-11 19:07:55.968 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:21:52.563 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-13 19:21:52.566 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-13 19:21:52.640 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-13 19:21:52.848 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:21:52.848 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:21:52.942 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-13 19:21:52.959 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-13 19:21:52.960 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-13 19:21:53.019 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:21:53.019 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-13 19:22:18.306 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:22:18.306 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-13 19:22:33.283 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:22:33.283 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:22:37.292 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:22:37.292 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:22:40.547 | INFO     | core.camera_manager:stop_camera:127 - 摄像头 0 已停止
+2025-11-13 19:22:55.513 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:22:55.513 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:22:56.864 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:22:56.873 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:31:49.340 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-13 19:31:49.343 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-13 19:31:49.387 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-13 19:31:49.603 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:31:49.603 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:31:49.627 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-13 19:31:49.629 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-13 19:31:49.629 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-13 19:31:49.697 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:31:49.697 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-13 19:32:14.923 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:32:14.924 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-13 19:32:16.085 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:32:16.085 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:39:30.841 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:39:30.849 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:39:44.049 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-13 19:39:44.051 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-13 19:39:44.074 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-13 19:39:44.252 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:39:44.252 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:39:44.271 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-13 19:39:44.272 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-13 19:39:44.273 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-13 19:39:44.328 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:39:44.328 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-13 19:40:09.408 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:40:09.408 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-13 19:40:18.232 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:40:18.242 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:40:25.294 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-13 19:40:25.296 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-13 19:40:25.319 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-13 19:40:25.491 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:40:25.491 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:40:25.510 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-13 19:40:25.511 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-13 19:40:25.511 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-13 19:40:25.571 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:40:25.571 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-13 19:40:44.532 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:40:44.544 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:45:21.143 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-13 19:45:21.144 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-13 19:45:21.167 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-13 19:45:21.349 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:45:21.350 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:45:21.366 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-13 19:45:21.368 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-13 19:45:21.368 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-13 19:45:21.422 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:45:21.422 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-13 19:45:46.547 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:45:46.548 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-13 19:45:58.518 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:45:58.525 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:46:03.653 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-13 19:46:03.655 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-13 19:46:03.680 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-13 19:46:03.906 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:46:03.906 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:46:03.925 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-13 19:46:03.926 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-13 19:46:03.926 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-13 19:46:03.984 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:46:03.984 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-13 19:46:29.061 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:46:29.061 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-13 19:49:17.448 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:49:17.456 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:49:30.847 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-13 19:49:30.849 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-13 19:49:30.872 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-13 19:49:31.045 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:49:31.045 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:49:31.062 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-13 19:49:31.063 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-13 19:49:31.063 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-13 19:49:31.119 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-13 19:49:31.119 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-13 19:49:56.242 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-13 19:49:56.242 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-13 19:50:06.269 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-13 19:50:06.269 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-13 19:50:11.161 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-13 19:50:11.168 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-16 22:37:46.827 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-16 22:37:46.830 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-16 22:37:46.875 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-16 22:37:47.228 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-16 22:37:47.228 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-16 22:37:47.412 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-16 22:37:47.448 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-16 22:37:47.449 | INFO     | __main__:main:120 - 程序启动成功
+2025-11-16 22:37:47.510 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-16 22:37:47.511 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-16 22:37:58.797 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-16 22:37:58.797 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-16 22:38:11.668 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-16 22:38:11.678 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-17 01:28:23.792 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-17 01:28:23.793 | INFO     | core.camera_manager:load_config:74 - 成功加载 2 个摄像头配置
+2025-11-17 01:28:23.812 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-17 01:28:24.068 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-17 01:28:24.069 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-17 01:28:24.096 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-17 01:28:24.097 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-17 01:28:24.097 | INFO     | __main__:main:121 - 程序启动成功
+2025-11-17 01:28:24.190 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-17 01:28:24.192 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-17 01:28:35.523 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-17 01:28:35.523 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-17 01:28:58.753 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-17 01:28:58.764 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-17 01:30:56.986 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-17 01:30:56.988 | INFO     | core.camera_manager:load_config:74 - 成功加载 1 个摄像头配置
+2025-11-17 01:30:57.008 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-17 01:30:57.184 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-17 01:30:57.184 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-17 01:30:57.196 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-17 01:30:57.197 | INFO     | __main__:main:121 - 程序启动成功
+2025-11-17 01:31:08.669 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-17 01:31:08.669 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-17 01:31:09.704 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-17 01:31:09.705 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-17 01:31:11.636 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-17 01:31:11.646 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-17 01:31:57.981 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-17 01:31:57.984 | INFO     | core.camera_manager:load_config:74 - 成功加载 4 个摄像头配置
+2025-11-17 01:31:58.000 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-17 01:31:58.185 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-17 01:31:58.186 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-17 01:31:58.196 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-17 01:31:58.197 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-17 01:31:58.198 | INFO     | core.camera_manager:start_camera:120 - 摄像头 2 已启动
+2025-11-17 01:31:58.198 | INFO     | core.camera_manager:start_camera:120 - 摄像头 3 已启动
+2025-11-17 01:31:58.198 | INFO     | __main__:main:121 - 程序启动成功
+2025-11-17 01:31:58.307 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 3，源：1
+2025-11-17 01:31:58.307 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 2，源：1
+2025-11-17 01:31:58.307 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-17 01:31:58.307 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 3 捕获线程退出
+2025-11-17 01:31:58.307 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 2 捕获线程退出
+2025-11-17 01:31:58.307 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-17 01:32:09.585 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-17 01:32:09.586 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-27 21:18:22.782 | SUCCESS  | core.face_detection:_load_model:59 - 人脸检测模型加载成功
+2025-11-27 21:18:22.786 | INFO     | core.camera_manager:load_config:74 - 成功加载 4 个摄像头配置
+2025-11-27 21:18:22.834 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-27 21:18:23.239 | INFO     | core.face_detection:load_known_faces:98 - 已加载人脸: cjj
+2025-11-27 21:18:23.239 | INFO     | core.face_detection:load_known_faces:103 - 共加载 1 张已知人脸
+2025-11-27 21:18:23.498 | INFO     | core.camera_manager:start_camera:120 - 摄像头 0 已启动
+2025-11-27 21:18:23.498 | INFO     | core.camera_manager:start_camera:120 - 摄像头 1 已启动
+2025-11-27 21:18:23.499 | INFO     | core.camera_manager:start_camera:120 - 摄像头 2 已启动
+2025-11-27 21:18:23.499 | INFO     | core.camera_manager:start_camera:120 - 摄像头 3 已启动
+2025-11-27 21:18:23.503 | INFO     | __main__:main:121 - 程序启动成功
+2025-11-27 21:18:23.756 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 2，源：1
+2025-11-27 21:18:23.757 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 1，源：1
+2025-11-27 21:18:23.757 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 3，源：1
+2025-11-27 21:18:23.758 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 2 捕获线程退出
+2025-11-27 21:18:23.758 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 1 捕获线程退出
+2025-11-27 21:18:23.758 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 3 捕获线程退出
+2025-11-27 21:18:48.893 | ERROR    | core.camera_manager:_capture_frames:142 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-27 21:18:48.893 | INFO     | core.camera_manager:_capture_frames:181 - 摄像头 0 捕获线程退出
+2025-11-27 21:18:48.893 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-27 21:18:48.902 | INFO     | core.camera_manager:stop_all_cameras:93 - 所有摄像头线程已停止
+2025-11-29 20:35:55.052 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2025-11-29 20:35:55.055 | INFO     | core.camera_manager:load_config:75 - 成功加载 4 个摄像头配置
+2025-11-29 20:35:55.100 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-29 20:35:55.297 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-11-29 20:35:55.297 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-11-29 20:35:55.387 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2025-11-29 20:35:55.405 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2025-11-29 20:35:55.407 | INFO     | core.camera_manager:start_camera:121 - 摄像头 2 已启动
+2025-11-29 20:35:55.408 | INFO     | core.camera_manager:start_camera:121 - 摄像头 3 已启动
+2025-11-29 20:35:55.409 | INFO     | __main__:main:121 - 程序启动成功
+2025-11-29 20:35:55.524 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 2，源：1
+2025-11-29 20:35:55.525 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 3，源：1
+2025-11-29 20:35:55.525 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-11-29 20:35:55.525 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 2 捕获线程退出
+2025-11-29 20:35:55.525 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 3 捕获线程退出
+2025-11-29 20:35:55.526 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2025-11-29 20:36:20.743 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-11-29 20:36:20.744 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 0 捕获线程退出
+2025-11-29 20:36:28.421 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-11-29 20:36:28.421 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-11-29 20:36:40.834 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-11-29 20:36:40.845 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-11-29 20:36:51.564 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2025-11-29 20:36:51.566 | INFO     | core.camera_manager:load_config:75 - 成功加载 3 个摄像头配置
+2025-11-29 20:36:51.583 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-29 20:36:51.775 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-11-29 20:36:51.775 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-11-29 20:36:51.786 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2025-11-29 20:36:51.787 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2025-11-29 20:36:51.788 | INFO     | core.camera_manager:start_camera:121 - 摄像头 2 已启动
+2025-11-29 20:36:51.788 | INFO     | __main__:main:121 - 程序启动成功
+2025-11-29 20:36:51.881 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-11-29 20:36:51.881 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 2，源：1
+2025-11-29 20:36:51.882 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2025-11-29 20:36:51.882 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 2 捕获线程退出
+2025-11-29 20:37:01.850 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-11-29 20:37:01.859 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-11-29 20:37:09.890 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2025-11-29 20:37:09.891 | INFO     | core.camera_manager:load_config:75 - 成功加载 2 个摄像头配置
+2025-11-29 20:37:09.908 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-11-29 20:37:10.140 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-11-29 20:37:10.140 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-11-29 20:37:10.150 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2025-11-29 20:37:10.151 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2025-11-29 20:37:10.151 | INFO     | __main__:main:121 - 程序启动成功
+2025-11-29 20:37:10.209 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-11-29 20:37:10.209 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2025-11-29 20:37:22.872 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-11-29 20:37:22.885 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-01 23:42:16.315 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2025-12-01 23:42:16.317 | INFO     | core.camera_manager:load_config:75 - 成功加载 2 个摄像头配置
+2025-12-01 23:42:16.357 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-12-01 23:42:16.539 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-12-01 23:42:16.540 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-12-01 23:42:16.590 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2025-12-01 23:42:16.592 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2025-12-01 23:42:16.592 | INFO     | __main__:main:121 - 程序启动成功
+2025-12-01 23:42:16.651 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-01 23:42:16.652 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2025-12-01 23:42:27.157 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-01 23:42:27.202 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-01 23:42:51.308 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2025-12-01 23:42:51.311 | INFO     | core.camera_manager:load_config:75 - 成功加载 2 个摄像头配置
+2025-12-01 23:42:51.332 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-12-01 23:42:51.488 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-12-01 23:42:51.488 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-12-01 23:42:51.500 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2025-12-01 23:42:51.501 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2025-12-01 23:42:51.501 | INFO     | __main__:main:121 - 程序启动成功
+2025-12-01 23:42:51.562 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-01 23:42:51.562 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2025-12-01 23:42:58.933 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-01 23:42:58.951 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-08 00:01:11.905 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2025-12-08 00:01:11.908 | INFO     | core.camera_manager:load_config:75 - 成功加载 2 个摄像头配置
+2025-12-08 00:01:11.958 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-12-08 00:01:12.190 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-12-08 00:01:12.190 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-12-08 00:01:12.271 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2025-12-08 00:01:12.288 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2025-12-08 00:01:12.289 | INFO     | __main__:main:121 - 程序启动成功
+2025-12-08 00:01:12.350 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-08 00:01:12.351 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2025-12-08 00:01:37.580 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-12-08 00:01:37.580 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 0 捕获线程退出
+2025-12-08 00:01:45.455 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-08 00:01:45.463 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-29 12:11:29.589 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2025-12-29 12:11:29.594 | INFO     | core.camera_manager:load_config:75 - 成功加载 2 个摄像头配置
+2025-12-29 12:11:29.668 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-12-29 12:11:29.920 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-12-29 12:11:29.920 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-12-29 12:11:30.033 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2025-12-29 12:11:30.113 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2025-12-29 12:11:30.114 | INFO     | __main__:main:121 - 程序启动成功
+2025-12-29 12:11:30.279 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-29 12:11:30.279 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2025-12-29 12:11:45.081 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-12-29 12:11:45.081 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 0 捕获线程退出
+2025-12-29 12:14:40.020 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-29 12:14:40.051 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-30 03:10:19.414 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2025-12-30 03:10:19.429 | INFO     | core.camera_manager:load_config:75 - 成功加载 2 个摄像头配置
+2025-12-30 03:10:19.473 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-12-30 03:10:19.762 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-12-30 03:10:19.762 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-12-30 03:10:19.820 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2025-12-30 03:10:19.821 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2025-12-30 03:10:19.822 | INFO     | __main__:main:121 - 程序启动成功
+2025-12-30 03:10:20.059 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-30 03:10:20.060 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2025-12-30 03:11:49.368 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-12-30 03:11:49.368 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 0 捕获线程退出
+2025-12-30 03:36:15.527 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2025-12-30 03:36:15.530 | INFO     | core.camera_manager:load_config:75 - 成功加载 2 个摄像头配置
+2025-12-30 03:36:15.580 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2025-12-30 03:36:15.893 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2025-12-30 03:36:15.893 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2025-12-30 03:36:15.910 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2025-12-30 03:36:15.913 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2025-12-30 03:36:15.913 | INFO     | __main__:main:121 - 程序启动成功
+2025-12-30 03:36:16.058 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2025-12-30 03:36:16.058 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2025-12-30 03:37:10.191 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2025-12-30 03:37:10.191 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 0 捕获线程退出
+2025-12-30 04:50:00.088 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2025-12-30 04:50:00.111 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2026-03-12 18:48:19.330 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2026-03-12 18:48:19.347 | INFO     | core.camera_manager:load_config:75 - 成功加载 2 个摄像头配置
+2026-03-12 18:48:19.514 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2026-03-12 18:48:20.411 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2026-03-12 18:48:20.412 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2026-03-12 18:48:20.558 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2026-03-12 18:48:20.676 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2026-03-12 18:48:20.678 | INFO     | __main__:main:121 - 程序启动成功
+2026-03-12 18:48:20.965 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2026-03-12 18:48:20.967 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2026-03-12 18:48:51.586 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 0，源：http://192.168.0.105:8080/video
+2026-03-12 18:48:51.586 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 0 捕获线程退出
+2026-03-12 18:48:54.570 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2026-03-12 18:48:54.592 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2026-03-12 22:53:07.364 | SUCCESS  | core.face_detection:_load_model:55 - 人脸检测模型加载成功
+2026-03-12 22:53:07.378 | INFO     | core.camera_manager:load_config:75 - 成功加载 2 个摄像头配置
+2026-03-12 22:53:07.776 | SUCCESS  | core.database:_init_db:71 - 数据库初始化成功
+2026-03-12 22:53:08.551 | INFO     | core.face_detection:load_known_faces:94 - 已加载人脸: cjj
+2026-03-12 22:53:08.552 | INFO     | core.face_detection:load_known_faces:99 - 共加载 1 张已知人脸
+2026-03-12 22:53:08.678 | INFO     | core.camera_manager:start_camera:121 - 摄像头 0 已启动
+2026-03-12 22:53:08.802 | INFO     | core.camera_manager:start_camera:121 - 摄像头 1 已启动
+2026-03-12 22:53:08.805 | INFO     | __main__:main:121 - 程序启动成功
+2026-03-12 22:53:09.011 | ERROR    | core.camera_manager:_capture_frames:143 - 无法打开摄像头 1，源：1
+2026-03-12 22:53:09.012 | INFO     | core.camera_manager:_capture_frames:182 - 摄像头 1 捕获线程退出
+2026-03-12 22:53:29.872 | WARNING  | core.camera_manager:_cleanup_camera_thread:43 - 摄像头 0 的线程未正常退出
+2026-03-12 22:53:29.872 | INFO     | core.camera_manager:stop_camera:128 - 摄像头 0 已停止
+2026-03-12 22:53:34.825 | INFO     | core.camera_manager:stop_camera:128 - 摄像头 1 已停止
+2026-03-12 22:53:36.839 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
+2026-03-12 22:53:36.853 | INFO     | core.camera_manager:stop_all_cameras:94 - 所有摄像头线程已停止
