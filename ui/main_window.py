@@ -715,16 +715,17 @@ class MainWindow(QMainWindow):
             event.accept()
 
     def apply_styles(self):
-    """统一设置应用的样式和色彩风格（简洁专业系统风）"""
-    base = self.base_font_size
-    title = base + 6
-    secondary = max(12, base - 2)
-    tab_height = base * 2
-    control_height = base * 2 + 8
-    overlay = max(16, base - 2)
-    group_title = base + 1
+        """统一设置应用的样式和色彩风格（简洁专业系统风）"""
+        base = self.base_font_size
+        title = base + 6
+        secondary = max(12, base - 2)
+        tab_font = base
+        tab_height = base * 2 + 6
+        control_height = base * 2 + 8
+        overlay = max(16, base - 2)
+        group_title = base + 1
 
-    self.setStyleSheet(f"""
+        self.setStyleSheet(f"""
         QMainWindow {{
             background-color: #f4f6f8;
             color: #111827;
@@ -763,7 +764,8 @@ class MainWindow(QMainWindow):
         }}
         QTabBar::tab {{
             min-height: {tab_height}px;
-            padding: 8px 16px;
+            min-width: 84px;
+            padding: 0 18px;
             background-color: #ffffff;
             color: #4b5563;
             border: 1px solid #d1d5db;
@@ -771,12 +773,15 @@ class MainWindow(QMainWindow):
             border-top-left-radius: 6px;
             border-top-right-radius: 6px;
             margin-right: 4px;
-            font-size: {secondary}px;
+            font-size: {tab_font}px;
+            font-weight: 500;
+            font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+            outline: none;
         }}
         QTabBar::tab:selected {{
             background-color: #e5edff;
             color: #1d4ed8;
-            font-weight: 600;
+            font-weight: 500;
         }}
         QPushButton {{
             min-height: {control_height}px;
