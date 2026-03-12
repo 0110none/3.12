@@ -188,12 +188,4 @@ telegram:
 - 智能家居：家庭成员到达时推送提醒。
 - 零售分析：统计顾客年龄与性别结构。
 
-## 📜 许可证
-MIT License，详见 [LICENSE](LICENSE)。
-
-## 🤝 贡献
-欢迎参与贡献！请查阅[贡献指南](CONTRIBUTING.md)。
-
-## ☕ 支持项目
-如果本项目对你有帮助，欢迎请作者喝杯咖啡！
-[Buy Me a Coffee](https://buymeacoffee.com/aarambhdevhub)
+> 说明：本项目当前版本不再包含 `web/` 静态前端页面。
