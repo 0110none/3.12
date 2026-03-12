@@ -34,29 +34,53 @@ class FaceDetector:
         self.recognition_threshold = config['recognition']['recognition_threshold']  # 识别阈值
         self.detection_threshold = config['recognition']['detection_threshold']      # 检测阈值
         self.max_batch_size = config['recognition']['max_batch_size']
-        self.device = config['recognition']['device']                               # CPU / GPU
+        self.device = config['recognition'].get('device', 'cuda').lower()            # CPU / GPU
         self.analysis_enabled = config['recognition'].get('analysis_enabled', True) # 是否启用年龄性别分析
         self.model = self._load_model()   # 加载 InsightFace 模型
         self.known_faces: List[KnownFace] = []  # 已知人脸列表
 
+    def _cuda_available(self) -> bool:
+        """检查当前环境是否可用 CUDA。"""
+        try:
+            return cv2.cuda.getCudaEnabledDeviceCount() > 0
+        except Exception:
+            return False
+
     def _load_model(self) -> FaceAnalysis:
         """加载 InsightFace 模型"""
-        try:
-            model = FaceAnalysis(
-                name='buffalo_l',
-                root='./',
-                allowed_modules=['detection', 'recognition', 'genderage']
-            )
-            model.prepare(
-                ctx_id=0 if self.device == 'cuda' else -1,  # GPU 或 CPU 模式
-                det_thresh=self.detection_threshold,
-                det_size=(640, 640)
-            )
-            logger.success("人脸检测模型加载成功")
-            return model
-        except Exception as e:
-            logger.error(f"加载人脸检测模型失败: {e}")
-            raise
+        preferred_cuda = self.device in ('cuda', 'gpu', 'auto')
+        run_on_cuda = preferred_cuda and self._cuda_available()
+
+        if preferred_cuda and not run_on_cuda:
+            logger.warning("未检测到可用 CUDA，自动切换为 CPU 模式")
+
+        contexts = [0, -1] if run_on_cuda else [-1]
+        last_error = None
+
+        for ctx_id in contexts:
+            try:
+                model = FaceAnalysis(
+                    name='buffalo_l',
+                    root='./',
+                    allowed_modules=['detection', 'recognition', 'genderage']
+                )
+                model.prepare(
+                    ctx_id=ctx_id,
+                    det_thresh=self.detection_threshold,
+                    det_size=(640, 640)
+                )
+                self.device = 'cuda' if ctx_id == 0 else 'cpu'
+                logger.success(f"人脸检测模型加载成功（设备: {self.device.upper()}）")
+                return model
+            except Exception as e:
+                last_error = e
+                logger.warning(
+                    f"使用 {'CUDA' if ctx_id == 0 else 'CPU'} 加载模型失败，"
+                    f"将尝试其他可用设备: {e}"
+                )
+
+        logger.error(f"加载人脸检测模型失败: {last_error}")
+        raise last_error
 
     def load_known_faces(self, known_faces_dir: str) -> None:
         """从目录加载已知人脸库"""
