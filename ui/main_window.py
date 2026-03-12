@@ -42,7 +42,7 @@ class MainWindow(QMainWindow):
         self.setGeometry(100, 100, 1200, 800)
 
         self.processing_interval = 2.0  # 图像处理间隔时间（秒）
-        self.base_font_size = 20
+        self.base_font_size = 16
 
         # --- 初始化核心组件 ---
         self.face_detector = FaceDetector(config)                         # 人脸检测与识别模块
@@ -83,6 +83,7 @@ class MainWindow(QMainWindow):
 
         # 标签页（Tab）
         self.tab_widget = QTabWidget()
+        self.tab_widget.tabBar().setExpanding(True)
         main_layout.addWidget(self.tab_widget)
 
         # 添加三个功能页
@@ -130,25 +131,6 @@ class MainWindow(QMainWindow):
         layout.setSpacing(16)
         layout.setContentsMargins(16, 16, 16, 16)
 
-        # 顶部导航栏（56px）
-        nav_bar = QFrame()
-        nav_bar.setObjectName("topNavBar")
-        nav_bar.setFixedHeight(56)
-        nav_layout = QHBoxLayout(nav_bar)
-        nav_layout.setContentsMargins(16, 0, 16, 0)
-        nav_title = QLabel("系统监控控制台")
-        nav_title.setObjectName("navTitle")
-        nav_layout.addWidget(nav_title)
-        nav_layout.addStretch()
-        self.quick_refresh_btn = QPushButton("快速刷新")
-        self.quick_refresh_btn.clicked.connect(self.handle_quick_refresh)
-        nav_layout.addWidget(self.quick_refresh_btn)
-        self.emergency_btn = QPushButton("应急模式")
-        self.emergency_btn.setObjectName("warningButton")
-        self.emergency_btn.clicked.connect(self.handle_emergency_mode)
-        nav_layout.addWidget(self.emergency_btn)
-        layout.addWidget(nav_bar)
-
         # 功能操作区
         toolbar = QGroupBox("功能操作区")
         toolbar_layout = QHBoxLayout(toolbar)
@@ -176,6 +158,15 @@ class MainWindow(QMainWindow):
         toolbar_layout.addWidget(self.threshold_slider, 1)
         self.threshold_value = QLabel(f"{self.threshold_slider.value() / 100:.2f}")
         toolbar_layout.addWidget(self.threshold_value)
+
+        toolbar_layout.addSpacing(12)
+        self.quick_refresh_btn = QPushButton("快速刷新")
+        self.quick_refresh_btn.clicked.connect(self.handle_quick_refresh)
+        toolbar_layout.addWidget(self.quick_refresh_btn)
+        self.emergency_btn = QPushButton("应急模式")
+        self.emergency_btn.setObjectName("warningButton")
+        self.emergency_btn.clicked.connect(self.handle_emergency_mode)
+        toolbar_layout.addWidget(self.emergency_btn)
         layout.addWidget(toolbar)
 
         # 主内容区
@@ -189,7 +180,7 @@ class MainWindow(QMainWindow):
         self.camera_grid.setSpacing(16)
         self.camera_grid.setContentsMargins(0, 0, 0, 0)
         scroll.setWidget(self.camera_container)
-        content_layout.addWidget(scroll, 3)
+        content_layout.addWidget(scroll, 5)
 
         right_panel = QVBoxLayout()
         summary_group = QGroupBox("系统摘要")
@@ -215,7 +206,7 @@ class MainWindow(QMainWindow):
         event_layout.addWidget(self.alert_table)
         right_panel.addWidget(event_group, 1)
 
-        content_layout.addLayout(right_panel, 2)
+        content_layout.addLayout(right_panel, 1)
         layout.addLayout(content_layout, 1)
 
         # 状态提示区
@@ -270,7 +261,7 @@ class MainWindow(QMainWindow):
 
             label = QLabel()
             label.setAlignment(Qt.AlignCenter)
-            label.setMinimumSize(240, 180)
+            label.setMinimumSize(180, 120)
             label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
             label.setObjectName("cameraFeed")
             frame_layout.addWidget(label)
@@ -286,6 +277,12 @@ class MainWindow(QMainWindow):
             row = index // columns
             col = index % columns
             self.camera_grid.addWidget(frame, row, col)
+
+        rows = (len(display_ids) + columns - 1) // columns
+        for row in range(rows):
+            self.camera_grid.setRowStretch(row, 1)
+        for col in range(columns):
+            self.camera_grid.setColumnStretch(col, 1)
 
     def setup_controls_tab(self):
         """控制界面：用于调节识别阈值、处理间隔、摄像头启停等"""
@@ -709,12 +706,12 @@ class MainWindow(QMainWindow):
     def apply_styles(self):
         """统一设置应用的样式和色彩风格（简洁专业系统风）"""
         base = self.base_font_size
-        title = base + 8
-        nav_title = base + 6
-        tab_height = base * 2 + 6
+        title = base + 6
+        secondary = max(12, base - 2)
+        tab_height = base * 2
         control_height = base * 2 + 8
         overlay = max(16, base - 2)
-        group_title = base + 2
+        group_title = base + 1
 
         self.setStyleSheet(f"""
             QMainWindow {
@@ -734,15 +731,6 @@ class MainWindow(QMainWindow):
                 font-size: {title}px;
                 font-weight: 700;
                 padding: 8px 0;
-            }
-            QFrame#topNavBar {
-                background: #ffffff;
-                border: 1px solid #d1d5db;
-                border-radius: 8px;
-            }
-            QLabel#navTitle {
-                font-size: {nav_title}px;
-                font-weight: 700;
             }
             QLabel#cameraFeed {
                 background-color: #111827;
@@ -772,7 +760,7 @@ class MainWindow(QMainWindow):
                 border-top-left-radius: 6px;
                 border-top-right-radius: 6px;
                 margin-right: 4px;
-                font-size: {base}px;
+                font-size: {secondary}px;
             }
             QTabBar::tab:selected {
                 background-color: #e5edff;
@@ -862,7 +850,7 @@ class MainWindow(QMainWindow):
                 border-radius: 8px;
             }
             QLabel#summaryLabel {
-                font-size: {base}px;
+                font-size: {secondary}px;
                 line-height: 1.5;
             }
             QScrollArea {
