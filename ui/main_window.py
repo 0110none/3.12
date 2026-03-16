@@ -10,6 +10,7 @@ from PyQt5.QtCore import QDateTime, Qt, QTimer
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import (
     QComboBox,
+    QFormLayout,
     QFrame,
     QGridLayout,
     QGroupBox,
@@ -23,6 +24,7 @@ from PyQt5.QtWidgets import (
     QSpinBox,
     QTabWidget,
     QTableWidgetItem,
+    QTextEdit,
     QVBoxLayout,
     QWidget,
 )
@@ -83,9 +85,12 @@ class MainWindow(QMainWindow):
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
         main_layout = QVBoxLayout(central_widget)
-        main_layout.setContentsMargins(14, 14, 14, 14)
+        main_layout.setContentsMargins(18, 18, 18, 12)
+        main_layout.setSpacing(12)
 
         self.tab_widget = QTabWidget()
+        self.tab_widget.setDocumentMode(True)
+        self.tab_widget.setElideMode(Qt.ElideNone)
         self.tab_widget.tabBar().setExpanding(True)
         main_layout.addWidget(self.tab_widget)
 
@@ -225,17 +230,20 @@ class MainWindow(QMainWindow):
         controls_tab = QWidget()
         self.tab_widget.addTab(controls_tab, "控制")
         layout = QVBoxLayout(controls_tab)
-        layout.setSpacing(16)
-        layout.setContentsMargins(16, 16, 16, 16)
+        layout.setSpacing(18)
+        layout.setContentsMargins(20, 20, 20, 20)
 
         camera_group = QGroupBox("摄像头控制")
         camera_layout = QVBoxLayout(camera_group)
+        camera_layout.setContentsMargins(18, 20, 18, 16)
+        camera_layout.setSpacing(12)
         self.ctrl_camera_combo = QComboBox()
         for cam_id, cam_config in self.camera_manager.cameras.items():
             self.ctrl_camera_combo.addItem(f"摄像头 {cam_id}: {cam_config.name}", cam_id)
         camera_layout.addWidget(self.ctrl_camera_combo)
 
         btn_layout = QHBoxLayout()
+        btn_layout.setSpacing(12)
         self.ctrl_start_btn = QPushButton("启动摄像头")
         self.ctrl_start_btn.clicked.connect(self.start_selected_camera)
         btn_layout.addWidget(self.ctrl_start_btn)
@@ -246,8 +254,12 @@ class MainWindow(QMainWindow):
         camera_layout.addLayout(btn_layout)
 
         threshold_layout = QHBoxLayout()
-        threshold_layout.addWidget(QLabel("识别阈值："))
+        threshold_layout.setSpacing(12)
+        threshold_label = QLabel("识别阈值：")
+        threshold_label.setObjectName("fieldTitle")
+        threshold_layout.addWidget(threshold_label)
         self.ctrl_threshold_slider = QSlider(Qt.Horizontal)
+        self.ctrl_threshold_slider.setMinimumWidth(260)
         self.ctrl_threshold_slider.setRange(50, 100)
         self.ctrl_threshold_slider.setValue(int(self.config['recognition']['recognition_threshold'] * 100))
         self.ctrl_threshold_slider.valueChanged.connect(self.update_threshold)
@@ -259,32 +271,48 @@ class MainWindow(QMainWindow):
         layout.addWidget(camera_group)
 
         interval_group = QGroupBox("处理参数")
-        interval_layout = QHBoxLayout(interval_group)
-        interval_layout.addWidget(QLabel("处理间隔（毫秒）："))
+        interval_layout = QFormLayout(interval_group)
+        interval_layout.setLabelAlignment(Qt.AlignLeft | Qt.AlignVCenter)
+        interval_layout.setFormAlignment(Qt.AlignLeft | Qt.AlignTop)
+        interval_layout.setSpacing(12)
+        interval_layout.setContentsMargins(18, 20, 18, 16)
         self.interval_spin = QSpinBox()
         self.interval_spin.setRange(100, 5000)
+        self.interval_spin.setSingleStep(100)
         self.interval_spin.setValue(int(self.processing_interval * 1000))
         self.interval_spin.valueChanged.connect(self.update_processing_interval)
-        interval_layout.addWidget(self.interval_spin)
+        interval_layout.addRow("处理间隔（毫秒）：", self.interval_spin)
         layout.addWidget(interval_group)
 
         font_group = QGroupBox("显示设置")
-        font_layout = QHBoxLayout(font_group)
-        font_layout.addWidget(QLabel("字体大小："))
+        font_layout = QFormLayout(font_group)
+        font_layout.setLabelAlignment(Qt.AlignLeft | Qt.AlignVCenter)
+        font_layout.setFormAlignment(Qt.AlignLeft | Qt.AlignTop)
+        font_layout.setSpacing(12)
+        font_layout.setContentsMargins(18, 20, 18, 16)
         self.font_size_combo = QComboBox()
         for label, size in self.FONT_SIZE_OPTIONS.items():
             self.font_size_combo.addItem(f"{label}（{size}px）", size)
         self.font_size_combo.currentIndexChanged.connect(self.update_font_size)
+        font_layout.addRow("字体大小：", self.font_size_combo)
         default_index = self.font_size_combo.findData(self.base_font_size)
         if default_index >= 0:
             self.font_size_combo.setCurrentIndex(default_index)
-        font_layout.addWidget(self.font_size_combo, 1)
         layout.addWidget(font_group)
 
         status_group = QGroupBox("系统状态")
         status_layout = QVBoxLayout(status_group)
-        self.status_display = QLabel("正在加载状态...")
-        self.status_display.setWordWrap(True)
+        status_layout.setContentsMargins(18, 20, 18, 18)
+        status_layout.setSpacing(10)
+
+        status_hint = QLabel("运行状态总览")
+        status_hint.setObjectName("fieldTitle")
+        status_layout.addWidget(status_hint)
+
+        self.status_display = QTextEdit()
+        self.status_display.setReadOnly(True)
+        self.status_display.setObjectName("statusDisplay")
+        self.status_display.setPlainText("正在加载状态...")
         status_layout.addWidget(self.status_display)
         layout.addWidget(status_group)
         layout.addStretch(1)
@@ -497,7 +525,7 @@ class MainWindow(QMainWindow):
             else:
                 status_text.append("暂无告警")
 
-            self.status_display.setText("\n".join(status_text))
+            self.status_display.setPlainText("\n".join(status_text))
             self.summary_widget.online_value.setText(f"{running_count}/{len(self.camera_manager.cameras)}")
             self.summary_widget.known_value.setText(str(face_count))
             self.summary_widget.alert_value.setText(str(len(recent_alerts)))
@@ -536,55 +564,85 @@ class MainWindow(QMainWindow):
 
     def apply_styles(self):
         base = self.base_font_size
+        tab_font = max(18, min(24, base + 1))
         title = base + 8
-        control_height = max(50, int(base * 2.2))
+        module_title = base + 2
+        control_height = max(52, int(base * 2.1))
 
         self.setStyleSheet(f"""
-        QMainWindow {{ background-color: #0f172a; color: #e5e7eb; }}
-        QMenuBar, QStatusBar {{ background: #111827; color: #f9fafb; font-size: {base}px; }}
-        QWidget {{ font-family: 'Microsoft YaHei UI', 'PingFang SC', 'Noto Sans CJK SC', sans-serif; }}
-        QLabel {{ color: #f3f4f6; font-size: {base}px; }}
-        QLabel#fieldTitle {{ color: #bfdbfe; font-size: {base}px; font-weight: 700; }}
-        QLabel#keyMetric {{ font-size: {title}px; font-weight: 800; color: #fbbf24; min-width: 78px; }}
+        QMainWindow {{ background-color: #0b1220; color: #e5e7eb; }}
+        QWidget {{ font-family: 'Microsoft YaHei UI', 'PingFang SC', 'Noto Sans CJK SC', sans-serif; color: #e5e7eb; }}
+        QMenuBar, QStatusBar {{ background: #0f172a; color: #f8fafc; font-size: {base - 2}px; }}
+        QStatusBar QLabel {{ padding: 2px 8px; font-size: {base - 2}px; }}
+
+        QTabWidget::pane {{ border: 1px solid #334155; border-radius: 12px; top: 2px; background: #0f172a; }}
+        QTabBar::tab {{
+            min-width: 210px; min-height: 64px; margin: 0 10px 0 0; padding: 10px 24px;
+            border: 1px solid #334155; border-top-left-radius: 12px; border-top-right-radius: 12px;
+            background: #1e293b; color: #cbd5e1; font-size: {tab_font}px; font-weight: 700;
+        }}
+        QTabBar::tab:hover {{ background: #334155; color: #f8fafc; }}
+        QTabBar::tab:selected {{ background: #2563eb; color: #ffffff; border: 2px solid #60a5fa; }}
+
+        QLabel {{ font-size: {base}px; }}
+        QLabel#fieldTitle {{ color: #bfdbfe; font-size: {base - 1}px; font-weight: 700; }}
+        QLabel#keyMetric {{ font-size: {title}px; font-weight: 800; color: #fbbf24; min-width: 92px; padding: 2px 6px; }}
 
         QGroupBox {{
-            border: 1px solid #334155; border-radius: 10px; margin-top: 14px; padding: 12px;
-            font-size: {base + 2}px; font-weight: 700; color: #e2e8f0; background: #111827;
+            border: 1px solid #334155; border-radius: 12px; margin-top: 16px; padding: 14px;
+            font-size: {module_title}px; font-weight: 700; color: #e2e8f0; background: #111827;
         }}
-        QGroupBox::title {{ subcontrol-origin: margin; left: 12px; padding: 0 6px; }}
+        QGroupBox::title {{ subcontrol-origin: margin; left: 14px; padding: 0 8px; }}
 
         QPushButton {{
-            min-height: {control_height}px; min-width: 148px; border-radius: 8px; padding: 6px 14px;
-            background-color: #2563eb; color: #ffffff; border: 1px solid #1d4ed8; font-size: {base}px;
+            min-height: {control_height}px; min-width: 156px; border-radius: 10px; padding: 8px 16px;
+            background-color: #2563eb; color: #ffffff; border: 1px solid #1d4ed8; font-size: {base - 1}px; font-weight: 600;
         }}
-        QPushButton#secondaryButton {{ background-color: #1f2937; border: 1px solid #475569; }}
+        QPushButton#secondaryButton {{ background-color: #1f2937; border: 1px solid #475569; color: #e2e8f0; }}
         QPushButton#warningButton {{ background-color: #b91c1c; border: 2px solid #ef4444; font-weight: 800; }}
         QPushButton:focus {{ border: 3px solid #facc15; }}
 
-        QComboBox, QSpinBox, QLineEdit {{
-            min-height: {control_height}px; border: 1px solid #475569; border-radius: 8px;
-            background: #0b1220; color: #f8fafc; padding: 0 10px; font-size: {base}px;
+        QComboBox, QSpinBox, QLineEdit, QDateEdit, QTextEdit, QListWidget {{
+            min-height: {control_height}px; border: 1px solid #475569; border-radius: 10px;
+            background: #0b1220; color: #f8fafc; padding: 0 12px; font-size: {base - 1}px;
         }}
+        QTextEdit#statusDisplay {{ min-height: 220px; padding: 12px; line-height: 1.5; }}
 
         QSlider::groove:horizontal {{ height: 12px; border-radius: 6px; background: #334155; }}
+        QSlider::sub-page:horizontal {{ background: #3b82f6; border-radius: 6px; }}
         QSlider::handle:horizontal {{ background: #fbbf24; border: 1px solid #f59e0b; width: 26px; margin: -7px 0; border-radius: 13px; }}
 
-        QFrame#cameraDisplay {{ border: 1px solid #334155; border-radius: 10px; background: #020617; }}
+        QFrame#cameraDisplay {{ border: 1px solid #334155; border-radius: 12px; background: #020617; }}
         QLabel#cameraFeed {{ background-color: #020617; border: none; border-radius: 10px; }}
-        QLabel#cameraOverlay {{ font-size: {base}px; font-weight: 700; color: #ffffff; background-color: rgba(15,23,42,0.65); border-radius: 6px; padding: 4px 10px; }}
+        QLabel#cameraOverlay {{ font-size: {base - 1}px; font-weight: 700; color: #ffffff; background-color: rgba(15,23,42,0.65); border-radius: 6px; padding: 6px 12px; }}
 
         QTableWidget {{
-            border: 1px solid #334155; border-radius: 8px; background: #0b1220; color: #e5e7eb;
-            alternate-background-color: #111827; selection-background-color: #1d4ed8; font-size: {base}px;
+            border: 1px solid #334155; border-radius: 10px; background: #0b1220; color: #e5e7eb;
+            alternate-background-color: #111827; selection-background-color: #1d4ed8; font-size: {base - 2}px;
         }}
         QHeaderView::section {{
-            background: #1e293b; color: #f8fafc; padding: 10px; border: none; border-bottom: 1px solid #334155;
-            font-weight: 800; min-height: {control_height + 8}px; font-size: {base}px;
+            background: #1e293b; color: #f8fafc; padding: 12px; border: none; border-bottom: 1px solid #334155;
+            font-weight: 800; min-height: {control_height + 10}px; font-size: {base - 2}px;
         }}
         QTableWidget::item {{ padding: 10px; min-height: {control_height}px; }}
 
-        QFrame#statusNotice {{ background: #1e293b; border: 1px solid #334155; border-radius: 10px; }}
-        QFrame#summaryCard {{ background: #0b1220; border: 1px solid #334155; border-radius: 10px; }}
-        QLabel#cardTitle {{ font-size: {base}px; color: #93c5fd; font-weight: 700; }}
-        QLabel#cardValue {{ font-size: {title + 2}px; color: #f8fafc; font-weight: 800; }}
+        QFrame#statusNotice {{ background: #1e293b; border: 1px solid #334155; border-radius: 12px; }}
+        QFrame#summaryCard {{ background: #0b1220; border: 1px solid #334155; border-radius: 12px; }}
+        QLabel#cardTitle {{ font-size: {base - 2}px; color: #93c5fd; font-weight: 700; }}
+        QLabel#cardValue {{ font-size: {title + 1}px; color: #f8fafc; font-weight: 800; }}
+        QLabel#exportPathLabel {{
+            border: 1px solid #475569; border-radius: 10px; background: #0b1220;
+            padding: 8px 12px; min-height: {control_height - 8}px; color: #cbd5e1;
+        }}
+        QListWidget#historyList {
+            padding: 10px; min-height: 420px;
+        }
+        QListWidget#historyList::item {
+            padding: 12px 10px; margin: 2px 0; border-radius: 8px;
+        }
+        QListWidget#historyList::item:selected { background: #1d4ed8; color: #ffffff; }
+        QLabel#detailsPanel {
+            border: 1px solid #334155; border-radius: 10px; background: #0b1220;
+            padding: 12px; line-height: 1.45;
+        }
         """)

@@ -3,7 +3,8 @@
 from pathlib import Path
 from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QListWidget, QPushButton,
                              QLabel, QDateEdit, QComboBox, QSpacerItem, QSizePolicy,
-                             QSplitter, QFrame, QMessageBox, QDialog, QFileDialog)
+                             QSplitter, QFrame, QMessageBox, QDialog, QFileDialog,
+                             QGroupBox)
 from PyQt5.QtCore import Qt, QDate
 from loguru import logger
 from datetime import datetime, timedelta
@@ -80,9 +81,14 @@ class HistoryViewer(QWidget):
     def setup_ui(self):
         """初始化界面组件：筛选区 + 历史列表 + 详情面板"""
         main_layout = QVBoxLayout()
+        main_layout.setContentsMargins(20, 20, 20, 20)
+        main_layout.setSpacing(16)
 
         # --- 筛选条件区 ---
-        filter_layout = QHBoxLayout()
+        filter_group = QGroupBox("筛选与操作")
+        filter_layout = QHBoxLayout(filter_group)
+        filter_layout.setContentsMargins(18, 16, 18, 16)
+        filter_layout.setSpacing(12)
 
         # 时间范围筛选
         date_layout = QVBoxLayout()
@@ -92,6 +98,7 @@ class HistoryViewer(QWidget):
         self.start_date = QDateEdit()
         self.start_date.setDate(QDate.currentDate().addDays(-7))  # 默认最近 7 天
         self.start_date.setCalendarPopup(True)
+        self.start_date.setMinimumWidth(180)
         date_range_layout.addWidget(self.start_date)
 
         date_range_layout.addWidget(QLabel("至"))
@@ -99,6 +106,7 @@ class HistoryViewer(QWidget):
         self.end_date = QDateEdit()
         self.end_date.setDate(QDate.currentDate())
         self.end_date.setCalendarPopup(True)
+        self.end_date.setMinimumWidth(180)
         date_range_layout.addWidget(self.end_date)
 
         date_layout.addLayout(date_range_layout)
@@ -109,6 +117,7 @@ class HistoryViewer(QWidget):
         camera_layout.addWidget(QLabel("摄像头："))
         self.camera_combo = QComboBox()
         self.camera_combo.addItem("全部摄像头", None)
+        self.camera_combo.setMinimumWidth(220)
         camera_layout.addWidget(self.camera_combo)
         filter_layout.addLayout(camera_layout)
 
@@ -117,6 +126,7 @@ class HistoryViewer(QWidget):
         face_layout.addWidget(QLabel("人脸："))
         self.face_combo = QComboBox()
         self.face_combo.addItem("全部人脸", None)
+        self.face_combo.setMinimumWidth(220)
         face_layout.addWidget(self.face_combo)
         filter_layout.addLayout(face_layout)
 
@@ -134,10 +144,13 @@ class HistoryViewer(QWidget):
         filter_layout.addWidget(self.clear_btn)
 
         filter_layout.addSpacerItem(QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum))
-        main_layout.addLayout(filter_layout)
+        main_layout.addWidget(filter_group)
 
         # 导出目录选择
-        path_layout = QHBoxLayout()
+        path_group = QGroupBox("导出设置")
+        path_layout = QHBoxLayout(path_group)
+        path_layout.setContentsMargins(18, 14, 18, 14)
+        path_layout.setSpacing(12)
         path_layout.addWidget(QLabel("保存位置："))
         self.export_path_label = QLabel()
         self.export_path_label.setObjectName("exportPathLabel")
@@ -145,15 +158,19 @@ class HistoryViewer(QWidget):
         path_layout.addWidget(self.export_path_label, 1)
 
         self.choose_dir_btn = QPushButton("选择保存位置")
+        self.choose_dir_btn.setObjectName("secondaryButton")
         self.choose_dir_btn.clicked.connect(self.choose_export_directory)
         path_layout.addWidget(self.choose_dir_btn)
-        main_layout.addLayout(path_layout)
+        main_layout.addWidget(path_group)
 
         # --- 主体区：历史列表 + 详情面板 ---
         splitter = QSplitter(Qt.Horizontal)
 
         # 历史记录列表
         self.history_list = QListWidget()
+        self.history_list.setObjectName("historyList")
+        self.history_list.setAlternatingRowColors(True)
+        self.history_list.setSpacing(4)
         self.history_list.currentItemChanged.connect(self.on_history_item_selected)
         splitter.addWidget(self.history_list)
 
@@ -161,6 +178,12 @@ class HistoryViewer(QWidget):
         details_frame = QFrame()
         details_frame.setFrameShape(QFrame.StyledPanel)
         details_layout = QVBoxLayout()
+        details_layout.setContentsMargins(16, 16, 16, 16)
+        details_layout.setSpacing(12)
+
+        details_title = QLabel("记录详情")
+        details_title.setObjectName("fieldTitle")
+        details_layout.addWidget(details_title)
 
         # 图片展示
         self.image_label = QLabel()
@@ -171,18 +194,23 @@ class HistoryViewer(QWidget):
         # 文本详情
         self.details_label = QLabel()
         self.details_label.setWordWrap(True)
+        self.details_label.setObjectName("detailsPanel")
+        self.details_label.setText("请选择左侧历史记录以查看详细信息。")
         details_layout.addWidget(self.details_label)
 
         # 查看截图按钮
         self.view_screenshot_btn = QPushButton("查看截图")
+        self.view_screenshot_btn.setObjectName("secondaryButton")
         self.view_screenshot_btn.clicked.connect(self.view_screenshot)
+        self.view_screenshot_btn.setMaximumWidth(220)
         details_layout.addWidget(self.view_screenshot_btn)
 
         details_frame.setLayout(details_layout)
         splitter.addWidget(details_frame)
 
-        splitter.setStretchFactor(0, 1)
-        splitter.setStretchFactor(1, 2)
+        splitter.setStretchFactor(0, 5)
+        splitter.setStretchFactor(1, 7)
+        splitter.setSizes([560, 760])
         main_layout.addWidget(splitter)
         self.setLayout(main_layout)
         self.update_export_path_label()
