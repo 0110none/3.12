@@ -99,6 +99,8 @@ def main():
         config = load_config('config/config.yaml')
         setup_logging(config['app']['log_dir'])
 
+        QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
+        QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
         app = QApplication(sys.argv)
         splash = show_splash_screen(config)
         splash.show()
@@ -116,7 +118,7 @@ def main():
             QTimer.singleShot(1500, lambda: splash.finish(window))
 
         QTimer.singleShot(2000, show_ai_loading)
-        QTimer.singleShot(3500, lambda: window.show())
+        QTimer.singleShot(3500, lambda: window.showFullScreen())
 
         logger.info("程序启动成功")
 
