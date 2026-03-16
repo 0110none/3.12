@@ -27,14 +27,16 @@ class MonitorToolbar(QGroupBox):
     def __init__(self, cameras, threshold_value: int, on_start, on_stop, on_threshold, on_refresh, on_emergency):
         super().__init__("监控控制")
         layout = QHBoxLayout(self)
-        layout.setSpacing(14)
-        layout.setContentsMargins(16, 14, 16, 14)
+        layout.setSpacing(16)
+        layout.setContentsMargins(20, 16, 20, 16)
 
-        layout.addWidget(QLabel("摄像头"))
+        camera_label = QLabel("摄像头")
+        camera_label.setObjectName("fieldTitle")
+        layout.addWidget(camera_label)
         self.camera_combo = QComboBox()
         for cam_id, cam_config in cameras.items():
             self.camera_combo.addItem(f"摄像头 {cam_id}: {cam_config.name}", cam_id)
-        self.camera_combo.setMinimumWidth(260)
+        self.camera_combo.setMinimumWidth(300)
         layout.addWidget(self.camera_combo)
 
         self.start_btn = QPushButton("启动摄像头")
@@ -47,6 +49,7 @@ class MonitorToolbar(QGroupBox):
         layout.addWidget(self.stop_btn)
 
         threshold_wrap = QVBoxLayout()
+        threshold_wrap.setSpacing(6)
         threshold_title = QLabel("识别阈值")
         threshold_title.setObjectName("fieldTitle")
         threshold_wrap.addWidget(threshold_title)
@@ -56,6 +59,7 @@ class MonitorToolbar(QGroupBox):
         self.threshold_slider.setRange(50, 100)
         self.threshold_slider.setValue(threshold_value)
         self.threshold_slider.valueChanged.connect(on_threshold)
+        self.threshold_slider.setMinimumWidth(220)
         row.addWidget(self.threshold_slider, 1)
 
         self.threshold_value_label = QLabel(f"{threshold_value / 100:.2f}")
@@ -108,6 +112,7 @@ class SummaryCardsWidget(QGroupBox):
 
         layout = QVBoxLayout(self)
         layout.setSpacing(12)
+        layout.setContentsMargins(18, 18, 18, 18)
         layout.addWidget(self._build_card("在线摄像头", self.online_value))
         layout.addWidget(self._build_card("已知人脸", self.known_value))
         layout.addWidget(self._build_card("最近告警", self.alert_value))
@@ -133,7 +138,8 @@ class AlertListWidget(QGroupBox):
     def __init__(self):
         super().__init__("最新告警")
         layout = QVBoxLayout(self)
-        layout.setContentsMargins(12, 12, 12, 12)
+        layout.setContentsMargins(16, 16, 16, 16)
+        layout.setSpacing(10)
 
         self.table = QTableWidget(0, 5)
         self.table.setHorizontalHeaderLabels(["时间", "人员", "摄像头", "置信度", "状态"])
@@ -144,6 +150,7 @@ class AlertListWidget(QGroupBox):
         header.setSectionResizeMode(3, QHeaderView.ResizeToContents)
         header.setSectionResizeMode(4, QHeaderView.ResizeToContents)
         header.setSectionsClickable(False)
+        header.setMinimumSectionSize(110)
 
         self.table.setWordWrap(False)
         self.table.setVerticalScrollMode(QTableWidget.ScrollPerPixel)
@@ -155,6 +162,9 @@ class AlertListWidget(QGroupBox):
         self.table.setAlternatingRowColors(True)
         self.table.setSortingEnabled(False)
         self.table.setShowGrid(False)
+        self.table.setColumnWidth(0, 150)
+        self.table.setColumnWidth(3, 130)
+        self.table.setColumnWidth(4, 120)
 
         layout.addWidget(self.table)
 
@@ -174,7 +184,8 @@ class StatusNoticeWidget(QFrame):
         super().__init__()
         self.setObjectName("statusNotice")
         layout = QHBoxLayout(self)
-        layout.setContentsMargins(16, 10, 16, 10)
+        layout.setContentsMargins(18, 14, 18, 14)
+        layout.setSpacing(14)
 
         self.notice_label = QLabel("系统运行正常，暂无未处理异常。")
         self.notice_label.setWordWrap(True)
