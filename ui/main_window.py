@@ -715,19 +715,25 @@ class MainWindow(QMainWindow):
             event.accept()
 
     def apply_styles(self):
-    """统一设置应用的样式和色彩风格（简洁专业系统风）"""
-    base = self.base_font_size
-    title = base + 6
-    secondary = max(12, base - 2)
-    tab_height = base * 2
-    control_height = base * 2 + 8
-    overlay = max(16, base - 2)
-    group_title = base + 1
+        """统一设置应用的样式和色彩风格（简洁专业系统风）"""
+        base = self.base_font_size
+        title = base + 6
+        secondary = max(12, base - 1)
+        tab_font = base
+        tab_height = base * 2 + 8
+        tab_h_padding = max(14, base)
+        control_height = base * 2 + 8
+        overlay = max(16, base - 2)
+        group_title = base + 1
 
-    self.setStyleSheet(f"""
+        self.setStyleSheet(f"""
+        QWidget {{
+            font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+            color: #111827;
+            font-size: {base}px;
+        }}
         QMainWindow {{
             background-color: #f4f6f8;
-            color: #111827;
         }}
         QMenuBar, QStatusBar {{
             background: #ffffff;
@@ -760,32 +766,43 @@ class MainWindow(QMainWindow):
             border: 1px solid #d1d5db;
             border-radius: 8px;
             background: #f4f6f8;
+            top: -1px;
         }}
         QTabBar::tab {{
             min-height: {tab_height}px;
-            padding: 8px 16px;
+            min-width: 92px;
+            padding: 0 {tab_h_padding}px;
             background-color: #ffffff;
             color: #4b5563;
             border: 1px solid #d1d5db;
             border-bottom: none;
-            border-top-left-radius: 6px;
-            border-top-right-radius: 6px;
-            margin-right: 4px;
-            font-size: {secondary}px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin-right: 6px;
+            margin-top: 4px;
+            font-size: {tab_font}px;
+            font-weight: 500;
+            text-align: center;
         }}
         QTabBar::tab:selected {{
             background-color: #e5edff;
             color: #1d4ed8;
-            font-weight: 600;
+            font-weight: 500;
+            margin-top: 0;
+        }}
+        QTabBar::tab:hover:!selected {{
+            background-color: #f8fafc;
+            color: #334155;
         }}
         QPushButton {{
             min-height: {control_height}px;
             border-radius: 6px;
-            padding: 4px 16px;
+            padding: 0 16px;
             background-color: #2563eb;
             color: #ffffff;
             border: 1px solid #1d4ed8;
             font-size: {base}px;
+            font-weight: 500;
         }}
         QPushButton:hover {{
             background-color: #1d4ed8;
@@ -805,13 +822,19 @@ class MainWindow(QMainWindow):
             border: 1px solid #d1d5db;
             border-radius: 6px;
             background: #ffffff;
-            padding: 0 8px;
+            padding: 0 10px;
             font-size: {base}px;
+            selection-background-color: #dbeafe;
+            selection-color: #111827;
+        }}
+        QComboBox::drop-down {{
+            border: none;
+            width: 26px;
         }}
         QSlider::groove:horizontal {{
             border: 1px solid #d1d5db;
             height: 8px;
-            border-radius: 3px;
+            border-radius: 4px;
             background: #e5e7eb;
         }}
         QSlider::handle:horizontal {{
@@ -824,7 +847,7 @@ class MainWindow(QMainWindow):
         QGroupBox {{
             border: 1px solid #d1d5db;
             border-radius: 8px;
-            margin-top: 12px;
+            margin-top: 14px;
             padding: 12px;
             font-size: {group_title}px;
             font-weight: 600;
@@ -833,7 +856,7 @@ class MainWindow(QMainWindow):
         QGroupBox::title {{
             subcontrol-origin: margin;
             subcontrol-position: top left;
-            padding: 0 6px;
+            padding: 0 8px;
             color: #111827;
         }}
         QTableWidget {{
@@ -843,16 +866,17 @@ class MainWindow(QMainWindow):
             gridline-color: #e5e7eb;
             alternate-background-color: #f9fafb;
             selection-background-color: #dbeafe;
+            selection-color: #111827;
             font-size: {base}px;
         }}
         QHeaderView::section {{
             background: #f3f4f6;
             color: #111827;
-            padding: 8px;
+            padding: 8px 10px;
             border: none;
             border-bottom: 1px solid #d1d5db;
-            font-weight: 700;
-            min-height: {control_height + 6}px;
+            font-weight: 600;
+            min-height: {control_height + 4}px;
             font-size: {base}px;
         }}
         QFrame#statusNotice {{
@@ -862,6 +886,7 @@ class MainWindow(QMainWindow):
         }}
         QLabel#summaryLabel {{
             font-size: {secondary}px;
+            color: #1f2937;
         }}
         QScrollArea {{
             border: none;
